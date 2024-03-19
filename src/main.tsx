@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, Suspense } from 'react';
 import FarmLogo from './assets/logo.png';
 import reactLogo from './assets/react.svg';
 import './main.css';
+import { useNavigate } from 'react-router-dom';
 
 export function Main() {
   const [count, setCount] = useState(0);
+  const go = useNavigate();
 
   return (
     <>
@@ -23,7 +25,9 @@ export function Main() {
           Edit <code>src/main.tsx</code> and save to test HMR
         </p>
       </div>
-      <p className="read-the-docs">Click on the Farm and React logos to learn more</p>
+      <p className="read-the-docs" onClick={() => go('/about')}>
+        Go to about page
+      </p>
     </>
   );
 }
