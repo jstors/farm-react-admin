@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "lib": ["DOM", "ES2017"],
+    "lib": ["DOM", "ES2017",],
     "noEmit": true,
     "esModuleInterop": true,
     "jsx": "react",

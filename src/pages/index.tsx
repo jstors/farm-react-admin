@@ -4,7 +4,7 @@ import FarmLogo from './assets/logo.png';
 import reactLogo from './assets/react.svg';
 import './main.css';
 
-export function Main() {
+function Main() {
   const [count, setCount] = useState(0);
   const go = useNavigate();
 
@@ -31,3 +31,4 @@ export function Main() {
     </>
   );
 }
+export default Main;
