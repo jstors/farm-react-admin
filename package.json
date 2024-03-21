@@ -8,12 +8,12 @@
     "react-router-dom": "^6.22.3"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.6.1",
+    "@biomejs/biome": "1.6.2",
     "@commitlint/cli": "^19.2.0",
     "@commitlint/config-conventional": "^19.1.0",
     "@farmfe/cli": "^1.0.0",
-    "@farmfe/core": "^1.0.2",
-    "@farmfe/plugin-react": "^1.0.0",
+    "@farmfe/core": "^1.0.3",
+    "@farmfe/plugin-react": "^1.0.1",
     "@types/react": "18",
     "@types/react-dom": "18",
     "core-js": "^3.30.1",
