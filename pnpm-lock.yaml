@@ -635,7 +635,7 @@ packages:
     engines: {node: '>= 16'}
     dependencies:
       '@farmfe/runtime': 0.10.0
-      '@farmfe/runtime-plugin-hmr': 3.5.0
+      '@farmfe/runtime-plugin-hmr': 3.5.1
       '@farmfe/runtime-plugin-import-meta': 0.2.0
       '@farmfe/utils': 0.1.0
       '@koa/cors': 4.0.0
@@ -772,8 +772,8 @@ packages:
       '@farmfe/plugin-react-win32-x64-msvc': 1.0.1
     dev: true
 
-  /@farmfe/runtime-plugin-hmr@3.5.0:
-    resolution: {integrity: sha512-j+f8r1wUNO4jrOziw3z/y0mUvACW9alV2Z8QqpUHtUkd8noSyawXAZPeq9hnFC3l+/p0upbjjvFmFivA5iZCOg==}
+  /@farmfe/runtime-plugin-hmr@3.5.1:
+    resolution: {integrity: sha512-uRjAekXsJOF5P5I8AwSXlLwDQRXRP616QvWaCYWtLvq6RXuOfY124W7PNriYj781RB0vDGXK32k/bmxjmwBEvg==}
     dependencies:
       core-js: 3.36.1
     dev: true
