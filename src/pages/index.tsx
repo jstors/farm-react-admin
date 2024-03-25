@@ -1,7 +1,7 @@
 import React, { useState, Suspense } from 'react';
 import { useNavigate } from 'react-router-dom';
-import FarmLogo from './assets/logo.png';
-import reactLogo from './assets/react.svg';
+import FarmLogo from '../assets/logo.png';
+import reactLogo from '../assets/react.svg';
 import './main.css';
 
 function Main() {
