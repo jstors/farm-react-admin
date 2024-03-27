@@ -8,5 +8,8 @@ export default defineConfig({
         resolver:'react',
         moduleId:"~react-pages",
       })
-  ]
+  ],
+  compilation:{
+    persistentCache:true,
+  }
 });
