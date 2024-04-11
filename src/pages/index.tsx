@@ -7,6 +7,7 @@ import './main.css';
 function Main() {
   const [count, setCount] = useState(0);
   const go = useNavigate();
+  console.log('🤖 == Main == go:', go);
 
   return (
     <>
