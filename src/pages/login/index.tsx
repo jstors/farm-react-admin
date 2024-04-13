@@ -1,9 +1,9 @@
 import { Button, Checkbox, Form, Input } from '@arco-design/web-react';
+import classnames from 'classnames';
 import React from 'react';
-import './style.less';
 import LogoSvg from '../../assets/login.svg';
 import RegisterSvg from '../../assets/register.svg';
-import classnames from 'classnames';
+import './style.less';
 
 const FormItem = Form.Item;
 
