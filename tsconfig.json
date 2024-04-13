@@ -1,12 +1,15 @@
 {
   "compilerOptions": {
-    "lib": ["DOM", "ES2017",],
+    "lib": ["DOM", "ES2017"],
     "noEmit": true,
     "esModuleInterop": true,
     "jsx": "react",
     "skipDefaultLibCheck": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "paths":{
+      "@/*": ["./src/*"],
+    }
   },
   "include": ["src"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
 }
