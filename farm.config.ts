@@ -21,6 +21,6 @@ export default defineConfig({
     }),
   ],
   compilation: {
-    persistentCache: false,
+    persistentCache: false
   },
 });
