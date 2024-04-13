@@ -22,7 +22,7 @@
 ---
 
 ## 使用
-1. 将改仓库`Fork`到你的仓库中
+1. 将该仓库`Fork`到你的仓库中
 2. `npx degit <git-username/farm-react-template> <porject-name>`
 
 > 如果`npx degit`下载的过慢,可以考虑全局安装`degit`工具,然后直接使用`degit`命令进行下载
