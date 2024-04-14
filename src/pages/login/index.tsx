@@ -1,39 +1,30 @@
-import { TOKEN_KEY } from '@/config/const';
-import { setCookie } from '@/utils/cookie';
-import { Button, Checkbox, Form, Input, Message } from '@arco-design/web-react';
+import { Button } from '@arco-design/web-react';
 import classnames from 'classnames';
 import React from 'react';
-import { useNavigate } from 'react-router';
 import LogoSvg from '../../assets/login.svg';
 import RegisterSvg from '../../assets/register.svg';
+import LoginForm from './loginForm';
+import RegisterForm from './registerForm';
 import './style.less';
-
-const FormItem = Form.Item;
 
 export enum LoginMode {
   LOGIN = 'login',
   REGISTER = 'register',
 }
 
+const TIPS_MAP = {
+  [LoginMode.LOGIN]: {
+    tip: '欢迎使用该系统',
+    content: '如果是新用户，请前往注册',
+  },
+  [LoginMode.REGISTER]: {
+    tip: '老用户了吗？',
+    content: '老用户请直接登录',
+  },
+};
+
 const Login = () => {
   const [mode, setMode] = React.useState<LoginMode>(LoginMode.LOGIN);
-  const go = useNavigate();
-
-  const initialValues = {
-    username: 'farm',
-    password: '123456',
-  };
-  /**
-   *
-   * @param value
-   */
-  const handleLogin = async (value) => {
-    console.log('🤖 == Login == handleLogin', value);
-    // TODO complete login logic
-    setCookie(TOKEN_KEY, new Date().getTime(), 1);
-    Message.success('登录成功');
-    go('/');
-  };
 
   const handleToggle = () => {
     setMode(mode === LoginMode.LOGIN ? LoginMode.REGISTER : LoginMode.LOGIN);
@@ -48,37 +39,9 @@ const Login = () => {
       <div className="form-container">
         {/* Login */}
         <div className="sign-signup">
-          <div className="form sign-form">
-            <Form initialValues={initialValues} onSubmit={handleLogin} className="w-1/2">
-              <FormItem field="username" rules={[{ required: true, message: '用户名不能为空' }]}>
-                <Input placeholder="请输入用户邮箱或者手机号" />
-              </FormItem>
-              <FormItem field="password" rules={[{ required: true, message: '请输入密码' }]}>
-                <Input.Password placeholder="请输入密码" />
-              </FormItem>
-              <FormItem>
-                <Button type="primary" htmlType="submit">
-                  登录
-                </Button>
-              </FormItem>
-            </Form>
-          </div>
+          <LoginForm />
           {/* 注册 */}
-          <div className="form signup-form">
-            <Form onSubmit={handleLogin} className="w-1/2">
-              <FormItem field="username" rules={[{ required: true, message: '用户名不能为空' }]}>
-                <Input placeholder="请输入用户邮箱或者手机号" />
-              </FormItem>
-              <FormItem field="password" rules={[{ required: true, message: '请输入密码' }]}>
-                <Input placeholder="请输入密码" />
-              </FormItem>
-              <FormItem>
-                <Button type="primary" htmlType="submit">
-                  登录
-                </Button>
-              </FormItem>
-            </Form>
-          </div>
+          <RegisterForm />
         </div>
       </div>
 
@@ -86,8 +49,8 @@ const Login = () => {
       <div className="panel-container">
         <div className="panel left-panel">
           <div className="content">
-            <h3>新用户吗？</h3>
-            <p>如果是新用户，请前往注册</p>
+            <h3>{TIPS_MAP[mode].tip}</h3>
+            <p>{TIPS_MAP[mode].content}</p>
             <Button onClick={handleToggle}>GO</Button>
           </div>
           <img src={LogoSvg} className="image" alt="" />
@@ -95,8 +58,8 @@ const Login = () => {
 
         <div className="panel right-panel">
           <div className="content">
-            <h3>老用户了吗？</h3>
-            <p>老用户请直接登录</p>
+            <h3>{TIPS_MAP[mode].tip}</h3>
+            <p>{TIPS_MAP[mode].content}</p>
             <Button onClick={handleToggle}>Go</Button>
           </div>
           <img src={RegisterSvg} className="image" alt="" />
