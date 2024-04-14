@@ -1,9 +1,12 @@
-import { Button, Checkbox, Form, Input } from '@arco-design/web-react';
+import { Button, Checkbox, Form, Input, Message } from '@arco-design/web-react';
 import classnames from 'classnames';
 import React from 'react';
 import LogoSvg from '../../assets/login.svg';
 import RegisterSvg from '../../assets/register.svg';
 import './style.less';
+import { setCookie } from '@/utils/cookie';
+import { TOKEN_KEY } from '@/config/const';
+import { useNavigate } from 'react-router';
 
 const FormItem = Form.Item;
 
@@ -14,12 +17,22 @@ export enum LoginMode {
 
 const Login = () => {
   const [mode, setMode] = React.useState<LoginMode>(LoginMode.LOGIN);
+  const go = useNavigate();
+
+  const initialValues = {
+    username: 'farm',
+    password: '123456',
+  };
   /**
    *
    * @param value
    */
   const handleLogin = async (value) => {
     console.log('🤖 == Login == handleLogin', value);
+    // TODO complete login logic
+    setCookie(TOKEN_KEY, new Date().getTime(), 1);
+    Message.success('登录成功');
+    go('/');
   };
 
   const handleToggle = () => {
@@ -36,12 +49,12 @@ const Login = () => {
         {/* Login */}
         <div className="sign-signup">
           <div className="form sign-form">
-            <Form onSubmit={handleLogin} className="w-1/2">
+            <Form initialValues={initialValues} onSubmit={handleLogin} className="w-1/2">
               <FormItem field="username" rules={[{ required: true, message: '用户名不能为空' }]}>
                 <Input placeholder="请输入用户邮箱或者手机号" />
               </FormItem>
               <FormItem field="password" rules={[{ required: true, message: '请输入密码' }]}>
-                <Input placeholder="请输入密码" />
+                <Input.Password placeholder="请输入密码" />
               </FormItem>
               <FormItem>
                 <Button type="primary" htmlType="submit">
