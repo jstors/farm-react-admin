@@ -1,7 +1,7 @@
-import { useEffect } from 'react';
-import { useLocation, useNavigate } from 'react-router';
 import { LOGIN_PATH, TOKEN_KEY } from '@/config/const';
 import { getCookie } from '@/utils/cookie';
+import { useEffect } from 'react';
+import { useLocation, useNavigate } from 'react-router';
 
 export default function useRouterGuard(callback?: () => void) {
   const location = useLocation();

@@ -1,12 +1,12 @@
+import { TOKEN_KEY } from '@/config/const';
+import { setCookie } from '@/utils/cookie';
 import { Button, Checkbox, Form, Input, Message } from '@arco-design/web-react';
 import classnames from 'classnames';
 import React from 'react';
+import { useNavigate } from 'react-router';
 import LogoSvg from '../../assets/login.svg';
 import RegisterSvg from '../../assets/register.svg';
 import './style.less';
-import { setCookie } from '@/utils/cookie';
-import { TOKEN_KEY } from '@/config/const';
-import { useNavigate } from 'react-router';
 
 const FormItem = Form.Item;
 
