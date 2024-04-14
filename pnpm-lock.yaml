@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@arco-design/web-react':
     specifier: ^2.61.3
-    version: 2.61.3(@types/react@18.2.77)(react-dom@18.2.0)(react@18.2.0)
+    version: 2.61.3(@types/react@18.2.78)(react-dom@18.2.0)(react@18.2.0)
   '@arco-themes/react-juzi001':
     specifier: ^0.0.1
     version: 0.0.1(@arco-design/web-react@2.61.3)
@@ -44,20 +44,20 @@ devDependencies:
     specifier: ^1.0.0
     version: 1.0.0
   '@farmfe/core':
-    specifier: ^1.0.18
-    version: 1.0.18
+    specifier: ^1.0.19
+    version: 1.0.19
   '@farmfe/js-plugin-less':
     specifier: ^1.6.2
-    version: 1.6.2(@farmfe/core@1.0.18)(less@4.2.0)
+    version: 1.6.2(@farmfe/core@1.0.19)(less@4.2.0)
   '@farmfe/js-plugin-postcss':
     specifier: ^1.5.3
-    version: 1.5.3(@farmfe/core@1.0.18)(postcss@8.4.38)
+    version: 1.5.3(@farmfe/core@1.0.19)(postcss@8.4.38)
   '@farmfe/plugin-react':
     specifier: ^1.0.1
     version: 1.0.1
   '@types/react':
-    specifier: ^18.2.77
-    version: 18.2.77
+    specifier: ^18.2.78
+    version: 18.2.78
   '@types/react-dom':
     specifier: ^18.2.25
     version: 18.2.25
@@ -124,7 +124,7 @@ packages:
       color: 3.2.1
     dev: false
 
-  /@arco-design/web-react@2.61.3(@types/react@18.2.77)(react-dom@18.2.0)(react@18.2.0):
+  /@arco-design/web-react@2.61.3(@types/react@18.2.78)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-YtJTqv/jya5UgPOAZJNtrr5KZjIhM7nNY5+yw6iEoo8yE+loMyZPUqc7jDtHhEYSyf/ejONfbjvTfXF0+Ins7g==}
     peerDependencies:
       react: '>=16'
@@ -140,7 +140,7 @@ packages:
       number-precision: 1.6.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
-      react-focus-lock: 2.11.2(@types/react@18.2.77)(react@18.2.0)
+      react-focus-lock: 2.11.3(@types/react@18.2.78)(react@18.2.0)
       react-is: 18.2.0
       react-transition-group: 4.4.5(react-dom@18.2.0)(react@18.2.0)
       resize-observer-polyfill: 1.5.1
@@ -168,7 +168,7 @@ packages:
     peerDependencies:
       '@arco-design/web-react': ^2.32.2
     dependencies:
-      '@arco-design/web-react': 2.61.3(@types/react@18.2.77)(react-dom@18.2.0)(react@18.2.0)
+      '@arco-design/web-react': 2.61.3(@types/react@18.2.78)(react-dom@18.2.0)(react@18.2.0)
     dev: false
 
   /@babel/code-frame@7.24.2:
@@ -1143,8 +1143,8 @@ packages:
       walkdir: 0.4.1
     dev: true
 
-  /@farmfe/core-darwin-arm64@1.0.18:
-    resolution: {integrity: sha512-6hbYvyN6YQVmL7CPW0W9mThEZ5iBle3JySBMfMYXaoB7lyuFjFgYe6B6J3vpHybbGS1vNb5X1vvLRC7hbf/vNg==}
+  /@farmfe/core-darwin-arm64@1.0.19:
+    resolution: {integrity: sha512-oHzMvkyEzf/2fjt0GXfBE7/XlNMMFVGAXtiYUmF5i2vf3NuJkN83knbTtw+C/wvOsAiK2do5V9IEcaJWp/K64w==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [darwin]
@@ -1152,8 +1152,8 @@ packages:
     dev: true
     optional: true
 
-  /@farmfe/core-darwin-x64@1.0.18:
-    resolution: {integrity: sha512-5MEHxlS5EsrqzRS1bw5SThhL773Yu4kuiIVwJJvJKikMWcyr/+7YJX5A2ZEG3hN841dIGTno7STlnnMcZah1vA==}
+  /@farmfe/core-darwin-x64@1.0.19:
+    resolution: {integrity: sha512-pUIM4zwq9YEedBH+fq5LHq4yucPMVH2/c6c/FbkU0zmhI7hjAc+yYc3pfp3rdZ5RF6TUD0HenWxnj58qtbBz5w==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [darwin]
@@ -1161,8 +1161,8 @@ packages:
     dev: true
     optional: true
 
-  /@farmfe/core-linux-arm64-gnu@1.0.18:
-    resolution: {integrity: sha512-2YJAcn+a9UOojq8W2deGjwK3vziQS03Z3f5XUR85us5BvG+oVXPFEPgM/Q3mk/lwQbNz6Oxa/y7F2BFzi6tFPQ==}
+  /@farmfe/core-linux-arm64-gnu@1.0.19:
+    resolution: {integrity: sha512-JO6jDqBHY5g2yt+bmAxRlEtemARbBWGy619LLgv2kdpzQx97asecUbonkDkfMBE5H5yeMkHiYHAFBd9lq11hYg==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
@@ -1170,8 +1170,8 @@ packages:
     dev: true
     optional: true
 
-  /@farmfe/core-linux-arm64-musl@1.0.18:
-    resolution: {integrity: sha512-miCDw0v+Pbkl+QDJ2QIEny2Sm+i0RMnOYRALr4IzkwFfmuMCpzqxeB1NeV8Ai3EkUo8vIVpHbEIRRufmJmqe/g==}
+  /@farmfe/core-linux-arm64-musl@1.0.19:
+    resolution: {integrity: sha512-DoYX+n5Dsc7ivqeVka6KsB9dwfl3+zVqCo94ysH0inS5GgOZHiSlVvVyOQsg/0zH+iRgXKVIfK12mCs98MlmuQ==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
@@ -1179,8 +1179,8 @@ packages:
     dev: true
     optional: true
 
-  /@farmfe/core-linux-x64-gnu@1.0.18:
-    resolution: {integrity: sha512-xaXC16LmWC+barBYzk/WRd89Xr+hLfzIYmycBbUlNv4R/5M+IvL+UAJefJ/tqZa9cPp4YgvHMEIsgvb5AfNL+Q==}
+  /@farmfe/core-linux-x64-gnu@1.0.19:
+    resolution: {integrity: sha512-6zoxEdxfDQZR0kpIsHKWFqsfHNNrxYyRB7REzSXkvPgVDwXkrK28M/K6bBG8xZ0ufxRV2m43vEXenpsDdN276A==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
@@ -1188,8 +1188,8 @@ packages:
     dev: true
     optional: true
 
-  /@farmfe/core-linux-x64-musl@1.0.18:
-    resolution: {integrity: sha512-Q7PTRmdyjRPz/VYbIfYRoeae1l7P4s1zC6LM1BDijcvwlSA8qEWEXlY4+Bw3MO3EZU7tco7511nwCDASHgvRjg==}
+  /@farmfe/core-linux-x64-musl@1.0.19:
+    resolution: {integrity: sha512-8aJ21tzH6iz+MJEtEoVc9Y1iW6quxvrnUAvrln+2JiheJRXbp+5p+0TZf0eOL3N5Pbv4S2+eyQ2Yp4CSNB/9og==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
@@ -1197,8 +1197,8 @@ packages:
     dev: true
     optional: true
 
-  /@farmfe/core-win32-arm64-msvc@1.0.18:
-    resolution: {integrity: sha512-D7k/wQYZXNtxecFjxlQ36NUaGVJBTsAJtmIvpkYjvuXET2mhN1R71rI0+ogBd43ksTq4zOPIe1cmIvTuIVPOxA==}
+  /@farmfe/core-win32-arm64-msvc@1.0.19:
+    resolution: {integrity: sha512-hTnsOhklm/zo78ZxlMb9g/lFUuIEV+nc5+H7doWHcBAz0tFjA9m4SSSOB7Cc8l97NIMGq4j1qDUV0P61zH1D0A==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [win32]
@@ -1206,8 +1206,8 @@ packages:
     dev: true
     optional: true
 
-  /@farmfe/core-win32-ia32-msvc@1.0.18:
-    resolution: {integrity: sha512-4U/3YEia/gfvWIr5IRkPrzTUFeaM7+A0GpNhXFLoBhQyu7gtzMfWU1J8zS8jW+CGQsM7MTrBhei81W3Zx7hM2w==}
+  /@farmfe/core-win32-ia32-msvc@1.0.19:
+    resolution: {integrity: sha512-7ZNVRSHgrwnMTV+EfLuO+ghGkmOMYGAC081bZssVu5ojA0WA6ycf67E13oqf6WY08ojC2JSqHOplgq4GzWkncA==}
     engines: {node: '>= 10'}
     cpu: [ia32]
     os: [win32]
@@ -1215,8 +1215,8 @@ packages:
     dev: true
     optional: true
 
-  /@farmfe/core-win32-x64-msvc@1.0.18:
-    resolution: {integrity: sha512-VJbSjyve/1IVQAEmR6eCn/r+zdqj0UPeyjGWau62YHaacu9JiqCxgpaMrkTS+PW/Sc3ffjm5pTQVhY+stIi1xQ==}
+  /@farmfe/core-win32-x64-msvc@1.0.19:
+    resolution: {integrity: sha512-iV09FRtQCsg7xkg3t0k+neSpK5kM5I9U1tW60vV/pRdVVpuh95hONMQswTcfpupL67/ae3LLXooVwRdgsEv41A==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
@@ -1224,8 +1224,8 @@ packages:
     dev: true
     optional: true
 
-  /@farmfe/core@1.0.18:
-    resolution: {integrity: sha512-S/R+aYwSVzQ8BQurmxg+LVViaxZW+PaSV7sTMqh1TIufsQAMNdW5pMpSkV+MwLjIJ1SY2mDgd681b+ebCSBiKA==}
+  /@farmfe/core@1.0.19:
+    resolution: {integrity: sha512-MAdFRJqq3BQJ/LkM/alX/X5Hsd2so/atYyDrj8MUo6NNaAKoBDm++ewVAQi+I7800XxcoTDA63xF/y1jeWNE8g==}
     engines: {node: '>= 16'}
     dependencies:
       '@farmfe/runtime': 0.10.0
@@ -1256,15 +1256,15 @@ packages:
       zod: 3.22.4
       zod-validation-error: 1.5.0(zod@3.22.4)
     optionalDependencies:
-      '@farmfe/core-darwin-arm64': 1.0.18
-      '@farmfe/core-darwin-x64': 1.0.18
-      '@farmfe/core-linux-arm64-gnu': 1.0.18
-      '@farmfe/core-linux-arm64-musl': 1.0.18
-      '@farmfe/core-linux-x64-gnu': 1.0.18
-      '@farmfe/core-linux-x64-musl': 1.0.18
-      '@farmfe/core-win32-arm64-msvc': 1.0.18
-      '@farmfe/core-win32-ia32-msvc': 1.0.18
-      '@farmfe/core-win32-x64-msvc': 1.0.18
+      '@farmfe/core-darwin-arm64': 1.0.19
+      '@farmfe/core-darwin-x64': 1.0.19
+      '@farmfe/core-linux-arm64-gnu': 1.0.19
+      '@farmfe/core-linux-arm64-musl': 1.0.19
+      '@farmfe/core-linux-x64-gnu': 1.0.19
+      '@farmfe/core-linux-x64-musl': 1.0.19
+      '@farmfe/core-win32-arm64-msvc': 1.0.19
+      '@farmfe/core-win32-ia32-msvc': 1.0.19
+      '@farmfe/core-win32-x64-msvc': 1.0.19
     transitivePeerDependencies:
       - bufferutil
       - debug
@@ -1272,23 +1272,23 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@farmfe/js-plugin-less@1.6.2(@farmfe/core@1.0.18)(less@4.2.0):
+  /@farmfe/js-plugin-less@1.6.2(@farmfe/core@1.0.19)(less@4.2.0):
     resolution: {integrity: sha512-cjPWO0UmsLDQKx1+naTaAVRLd2xS4k/hpZb6qHZhBsaeulqTCeudu1wzEdAt3sbtkqtTFIf08AFszzRlek4odg==}
     peerDependencies:
       '@farmfe/core': ^1.0.8
       less: ^3.5.0 || ^4.0.0
     dependencies:
-      '@farmfe/core': 1.0.18
+      '@farmfe/core': 1.0.19
       less: 4.2.0
     dev: true
 
-  /@farmfe/js-plugin-postcss@1.5.3(@farmfe/core@1.0.18)(postcss@8.4.38):
+  /@farmfe/js-plugin-postcss@1.5.3(@farmfe/core@1.0.19)(postcss@8.4.38):
     resolution: {integrity: sha512-BBobGhBn1PAxHwxNizVDSvxXNnXFvnY8pxYUgwV076l3R8z41Vga0hSpY0pC34/31dp02eN8OqXEr+fS7tyquw==}
     peerDependencies:
       '@farmfe/core': ^1.0.9
       postcss: '>=8.0.0'
     dependencies:
-      '@farmfe/core': 1.0.18
+      '@farmfe/core': 1.0.19
       postcss: 8.4.38
     dev: true
 
@@ -1745,11 +1745,11 @@ packages:
   /@types/react-dom@18.2.25:
     resolution: {integrity: sha512-o/V48vf4MQh7juIKZU2QGDfli6p1+OOi5oXx36Hffpc9adsHeXjVp8rHuPkjd8VT8sOJ2Zp05HR7CdpGTIUFUA==}
     dependencies:
-      '@types/react': 18.2.77
+      '@types/react': 18.2.78
     dev: true
 
-  /@types/react@18.2.77:
-    resolution: {integrity: sha512-CUT9KUUF+HytDM7WiXKLF9qUSg4tGImwy4FXTlfEDPEkkNUzJ7rVFolYweJ9fS1ljoIaP7M7Rdjc5eUm/Yu5AA==}
+  /@types/react@18.2.78:
+    resolution: {integrity: sha512-qOwdPnnitQY4xKlKayt42q5W5UQrSHjgoXNVEtxeqdITJ99k4VXJOP3vt8Rkm9HmgJpH50UNU+rlqfkfWOqp0A==}
     dependencies:
       '@types/prop-types': 15.7.12
       csstype: 3.1.3
@@ -1805,7 +1805,7 @@ packages:
     engines: {node: '>=14'}
     dependencies:
       '@unocss/core': 0.59.2
-      unconfig: 0.3.12
+      unconfig: 0.3.13
     dev: true
 
   /@unocss/core@0.59.2:
@@ -5053,8 +5053,8 @@ packages:
       scheduler: 0.23.0
     dev: false
 
-  /react-focus-lock@2.11.2(@types/react@18.2.77)(react@18.2.0):
-    resolution: {integrity: sha512-DDTbEiov0+RthESPVSTIdAWPPKic+op3sCcP+icbMRobvQNt7LuAlJ3KoarqQv5sCgKArru3kXmlmFTa27/CdQ==}
+  /react-focus-lock@2.11.3(@types/react@18.2.78)(react@18.2.0):
+    resolution: {integrity: sha512-CfWYS86y6KvAIGxYzO1/HlWI2zGON9Fa3L2xfREDGMNFAtYj3m/ZRvnsMH4H75dj5FpgDy2LWA1Vyx+twV80vw==}
     peerDependencies:
       '@types/react': ^16.8.0 || ^17.0.0 || ^18.0.0
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -5063,13 +5063,13 @@ packages:
         optional: true
     dependencies:
       '@babel/runtime': 7.24.4
-      '@types/react': 18.2.77
+      '@types/react': 18.2.78
       focus-lock: 1.3.5
       prop-types: 15.8.1
       react: 18.2.0
       react-clientside-effect: 1.2.6(react@18.2.0)
-      use-callback-ref: 1.3.2(@types/react@18.2.77)(react@18.2.0)
-      use-sidecar: 1.1.2(@types/react@18.2.77)(react@18.2.0)
+      use-callback-ref: 1.3.2(@types/react@18.2.78)(react@18.2.0)
+      use-sidecar: 1.1.2(@types/react@18.2.78)(react@18.2.0)
     dev: false
 
   /react-is@16.13.1:
@@ -5899,13 +5899,12 @@ packages:
       which-boxed-primitive: 1.0.2
     dev: true
 
-  /unconfig@0.3.12:
-    resolution: {integrity: sha512-oDtfWDC0TMYFuwdt7E7CaqYZGqq1wAiC12PRTFe/93IkgNi+wVlF/LCjcD/bgNkGoopb0RsU363Ge3YXy7NGSw==}
+  /unconfig@0.3.13:
+    resolution: {integrity: sha512-N9Ph5NC4+sqtcOjPfHrRcHekBCadCXWTBzp2VYYbySOHW0PfD9XLCeXshTXjkPYwLrBr9AtSeU0CZmkYECJhng==}
     dependencies:
       '@antfu/utils': 0.7.7
       defu: 6.1.4
       jiti: 1.21.0
-      mlly: 1.6.1
     dev: true
 
   /undici-types@5.26.5:
@@ -5988,7 +5987,7 @@ packages:
       punycode: 2.3.1
     dev: true
 
-  /use-callback-ref@1.3.2(@types/react@18.2.77)(react@18.2.0):
+  /use-callback-ref@1.3.2(@types/react@18.2.78)(react@18.2.0):
     resolution: {integrity: sha512-elOQwe6Q8gqZgDA8mrh44qRTQqpIHDcZ3hXTLjBe1i4ph8XpNJnO+aQf3NaG+lriLopI4HMx9VjQLfPQ6vhnoA==}
     engines: {node: '>=10'}
     peerDependencies:
@@ -5998,12 +5997,12 @@ packages:
       '@types/react':
         optional: true
     dependencies:
-      '@types/react': 18.2.77
+      '@types/react': 18.2.78
       react: 18.2.0
       tslib: 2.6.2
     dev: false
 
-  /use-sidecar@1.1.2(@types/react@18.2.77)(react@18.2.0):
+  /use-sidecar@1.1.2(@types/react@18.2.78)(react@18.2.0):
     resolution: {integrity: sha512-epTbsLuzZ7lPClpz2TyryBfztm7m+28DlEv2ZCQ3MDr5ssiwyOwGH/e5F9CkfWjJ1t4clvI58yF822/GUkjjhw==}
     engines: {node: '>=10'}
     peerDependencies:
@@ -6013,7 +6012,7 @@ packages:
       '@types/react':
         optional: true
     dependencies:
-      '@types/react': 18.2.77
+      '@types/react': 18.2.78
       detect-node-es: 1.1.0
       react: 18.2.0
       tslib: 2.6.2
