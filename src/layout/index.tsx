@@ -2,14 +2,15 @@ import { INDEPENDENT_ROUTES } from '@/config/const';
 import { Layout, Spin } from '@arco-design/web-react';
 import React, { Suspense, useState } from 'react';
 import { useLocation, useRoutes } from 'react-router';
+import CustomHeader from './header';
 import Menu from './menu';
+import './style.less';
 
 const Header = Layout.Header;
 const Content = Layout.Content;
 const Sider = Layout.Sider;
 
 const CustomLayout = ({ routers = [] }) => {
-  console.log('🤖 == CustomLayout == routers:', routers);
   const collapsedWidth = 60;
   const normalWidth = 220;
   const [siderWidth, setSiderWidth] = useState(normalWidth);
@@ -54,9 +55,11 @@ const CustomLayout = ({ routers = [] }) => {
             >
               <Menu onCollapse={onCollapse} />
             </Sider>
-            <div>
-              <Header>Header</Header>
-              <Content>
+            <div className="w-full box-border bg-[#f0f2f5]">
+              <Header>
+                <CustomHeader />
+              </Header>
+              <Content className="m-1 p-2 rounded bg-[var(--color-bg-1)]">
                 <Suspense fallback={<Spin dot />}>{useRoutes(routers)}</Suspense>
               </Content>
             </div>

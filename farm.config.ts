@@ -16,7 +16,17 @@ export default defineConfig({
       buildDependencies: ['tailwind.config.js'],
     },
   },
-  plugins: ['@farmfe/plugin-react', 'farm-plugin-remove-console', less(), postcss()],
+  plugins: [
+    [
+      '@farmfe/plugin-react',
+      {
+        runtime: 'automatic',
+      },
+    ],
+    'farm-plugin-remove-console',
+    less(),
+    postcss(),
+  ],
   vitePlugins: [
     Pages({
       resolver: 'react',
