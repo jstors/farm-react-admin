@@ -24,7 +24,7 @@ const LoginForm = () => {
   };
 
   return (
-    <div className="form signup-form">
+    <div className="form register-form">
       <Form onSubmit={handleLogin} className="w-1/2">
         <FormItem field="username" rules={[{ required: true, message: '用户名不能为空' }]}>
           <Input placeholder="请输入用户邮箱或者手机号" />

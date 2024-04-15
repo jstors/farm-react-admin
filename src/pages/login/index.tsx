@@ -26,6 +26,9 @@ const TIPS_MAP = {
 const Login = () => {
   const [mode, setMode] = React.useState<LoginMode>(LoginMode.LOGIN);
 
+  /**
+   * 切换登录/注册
+   */
   const handleToggle = () => {
     setMode(mode === LoginMode.LOGIN ? LoginMode.REGISTER : LoginMode.LOGIN);
   };
@@ -37,15 +40,13 @@ const Login = () => {
       })}
     >
       <div className="form-container">
-        {/* Login */}
-        <div className="sign-signup">
+        <div className="sign-register">
+          {/* 登录 */}
           <LoginForm />
           {/* 注册 */}
           <RegisterForm />
         </div>
       </div>
-
-      {/* 容器 */}
       <div className="panel-container">
         <div className="panel left-panel">
           <div className="content">

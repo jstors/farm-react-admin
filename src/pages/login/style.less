@@ -11,7 +11,7 @@
     width: 200vh;
     height: 200vh;
     border-radius: 50%;
-    background: linear-gradient(-45deg, #4481eb, #04befe);
+    background: linear-gradient(-45deg, rgb(var(--primary-6)),  rgb(var(--primary-4)));
     right: 50%;
     top: -10%;
     transform: translateY(-40%);
@@ -29,7 +29,7 @@
     overflow: hidden;
 
     // 登录注册容器
-    .sign-signup {
+    .sign-register {
       position: absolute;
       top: 50%;
       left: 75%;
@@ -54,7 +54,7 @@
         z-index: 2;
         transition: 0.4s 0.7s ease-in-out;
       }
-      .signup-form {
+      .register-form {
         opacity: 0;
         z-index: 1;
         transition: 0.4s 0.7s ease-in-out;
@@ -119,14 +119,14 @@
     right: 48%;
   }
   .form-container {
-    .sign-signup {
+    .sign-register {
       left: 25%;
       .sign-form {
         opacity: 0;
         z-index: 1;
       }
 
-      .signup-form {
+      .register-form {
         z-index: 2;
         opacity: 1;
       }
