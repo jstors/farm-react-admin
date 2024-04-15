@@ -12,7 +12,9 @@ export default defineConfig({
         '@/': path.join(process.cwd(), 'src'),
       },
     },
-    persistentCache: false,
+    persistentCache: {
+      buildDependencies: ['tailwind.config.js'],
+    },
   },
   plugins: ['@farmfe/plugin-react', 'farm-plugin-remove-console', less(), postcss()],
   vitePlugins: [
