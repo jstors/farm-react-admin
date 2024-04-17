@@ -3,11 +3,12 @@
   "extends": ["config:base"],
   "labels": ["dependencies"],
   "schedule": ["after 3pm every day",], 
-  "rangeStrategy":"bump",
   "packageRules": [
     {
-      "packagePatterns": ["^@farmfe/"],
+      "packagePatterns": ["^@farmfe/*"],
       "groupName": "farmfe-packages",
+      "enabled":true,
+      "schedule": ["after 6pm every day"], 
     },
     {
       "depTypeList": ["peerDependencies"],
