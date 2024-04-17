@@ -5,9 +5,8 @@
   "schedule": ["after 3am every day",], 
   "packageRules": [
     {
-      "packagePatterns": ["^@farmfe/*"],
+      "packagePatterns": ["@farmfe/core"],
       "groupName": "farmfe-packages",
-      "enabled":true,
     }
   ],
 }
