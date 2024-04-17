@@ -1,18 +1,13 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base"],
+  "extends": ["config:recommend"],
   "labels": ["dependencies"],
-  "schedule": ["after 3pm every day",], 
+  "schedule": ["after 3am every day",], 
   "packageRules": [
     {
       "packagePatterns": ["^@farmfe/*"],
       "groupName": "farmfe-packages",
       "enabled":true,
-      "schedule": ["after 6pm every day"], 
-    },
-    {
-      "depTypeList": ["peerDependencies"],
-      "enabled": false,
-    },
+    }
   ],
 }
