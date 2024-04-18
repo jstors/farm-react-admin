@@ -6,7 +6,8 @@
   "prCreation": "immediate",
   "packageRules": [
     {
-      "matchDepTypes": ["dependencies","devDependencies"]
+      "matchDepTypes": ["dependencies","devDependencies"],
+      "matchUpdateTypes": ["major","minor","patch","pin","lockFileMaintenance","bump"],
     }
   ]
 }
