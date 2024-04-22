@@ -74,7 +74,7 @@ importers:
         version: 10.4.19(postcss@8.4.38)
       core-js:
         specifier: ^3.36.1
-        version: 3.36.1
+        version: 3.37.0
       farm-plugin-remove-console:
         specifier: ^0.1.2
         version: 0.1.2
@@ -1364,8 +1364,8 @@ packages:
   copy-anything@2.0.6:
     resolution: {integrity: sha512-1j20GZTsvKNkc4BY3NpMOM8tt///wY3FpIzozTOFO2ffuZcV61nojHXVKIy3WM+7ADCy5FVhdZYHYDdgTU0yJw==}
 
-  core-js@3.36.1:
-    resolution: {integrity: sha512-BTvUrwxVBezj5SZ3f10ImnX2oRByMxql3EimVqMysepbC9EeMUOpLwdy6Eoili2x6E4kf+ZUB5k/+Jv55alPfA==}
+  core-js@3.37.0:
+    resolution: {integrity: sha512-fu5vHevQ8ZG4og+LXug8ulUtVxjOcEYvifJr7L5Bfq9GOztVqsKd9/59hUk2ZSbCrS3BqUr3EpaYGIYzq7g3Ug==}
 
   cosmiconfig-typescript-loader@5.0.0:
     resolution: {integrity: sha512-+8cK7jRAReYkMwMiG+bxhcNKiHJDM6bR9FD/nGBXOWdMLuYawjF5cGrtLilJ+LGd3ZjCXnJjR5DkfWPoIVlqJA==}
@@ -4306,15 +4306,15 @@ snapshots:
 
   '@farmfe/runtime-plugin-hmr@3.5.1':
     dependencies:
-      core-js: 3.36.1
+      core-js: 3.37.0
 
   '@farmfe/runtime-plugin-import-meta@0.2.0':
     dependencies:
-      core-js: 3.36.1
+      core-js: 3.37.0
 
   '@farmfe/runtime@0.10.0':
     dependencies:
-      core-js: 3.36.1
+      core-js: 3.37.0
 
   '@farmfe/utils@0.0.1': {}
 
@@ -4994,7 +4994,7 @@ snapshots:
     dependencies:
       is-what: 3.14.1
 
-  core-js@3.36.1: {}
+  core-js@3.37.0: {}
 
   cosmiconfig-typescript-loader@5.0.0(@types/node@20.12.7)(cosmiconfig@9.0.0(typescript@5.4.5))(typescript@5.4.5):
     dependencies:
