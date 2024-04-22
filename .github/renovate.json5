@@ -1,15 +1,28 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>renovatebot/.github"],
-  "semanticCommitScope": "deps",
-  "automergeType": "pr",
-  "prCreation": "immediate",
-  "packageRules": [
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+  extends: [
+    'github>renovatebot/.github',
+  ],
+  semanticCommitScope: 'deps',
+  automergeType: 'pr',
+  prCreation: 'immediate',
+  packageRules: [
     {
-      "packagePatterns": ["^@farmfe/*"],
-      "groupName": "farmfe-packages",
-      "matchUpdateTypes": ["major","minor","patch","pin","lockFileMaintenance","bump"],
-      "schedule": ["after 6pm every day"]
-    }
-  ]
+      matchPackagePatterns: [
+        '^@farmfe/*',
+      ],
+      groupName: 'farmfe-packages',
+      matchUpdateTypes: [
+        'major',
+        'minor',
+        'patch',
+        'pin',
+        'lockFileMaintenance',
+        'bump',
+      ],
+      schedule: [
+        'after 6pm',
+      ],
+    },
+  ],
 }
