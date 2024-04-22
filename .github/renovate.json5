@@ -6,8 +6,10 @@
   "prCreation": "immediate",
   "packageRules": [
     {
-      "matchDepTypes": ["dependencies","devDependencies"],
+      "packagePatterns": ["^@farmfe/*"],
+      "groupName": "farmfe-packages",
       "matchUpdateTypes": ["major","minor","patch","pin","lockFileMaintenance","bump"],
+      "schedule": ["after 6pm every day"]
     }
   ]
 }
