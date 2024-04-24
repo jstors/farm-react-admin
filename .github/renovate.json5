@@ -6,25 +6,21 @@
   semanticCommitScope: 'deps',
   automergeType: 'pr',
   prCreation: 'immediate',
-  enable: false,
   packageRules: [
     {
       matchPackagePatterns: [
         '^@farmfe/*',
       ],
       groupName: 'farmfe-packages',
-      matchUpdateTypes: [
-        'major',
-        'minor',
-        'patch',
-        'pin',
-        'lockFileMaintenance',
-        'bump',
-      ],
       schedule: [
         'after 6pm',
       ],
-      enable: true,
+    },
+    {
+      matchPackagePatterns: [
+        "^(?!@farmfe/).*$"
+      ],
+      enable: false,
     }
   ],
 }
