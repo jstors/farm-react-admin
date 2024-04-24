@@ -50,13 +50,13 @@ importers:
         version: 1.0.0
       '@farmfe/core':
         specifier: ^1.0.20
-        version: 1.0.20
+        version: 1.0.21
       '@farmfe/js-plugin-less':
         specifier: ^1.6.2
-        version: 1.6.2(@farmfe/core@1.0.20)(less@4.2.0)
+        version: 1.6.2(@farmfe/core@1.0.21)(less@4.2.0)
       '@farmfe/js-plugin-postcss':
         specifier: ^1.5.3
-        version: 1.5.3(@farmfe/core@1.0.20)(postcss@8.4.38)
+        version: 1.5.3(@farmfe/core@1.0.21)(postcss@8.4.38)
       '@farmfe/plugin-react':
         specifier: ^1.0.1
         version: 1.0.1
@@ -603,62 +603,62 @@ packages:
     engines: {node: '>= 16'}
     hasBin: true
 
-  '@farmfe/core-darwin-arm64@1.0.20':
-    resolution: {integrity: sha512-Y4IABqa67Pn58m2dMY5HIhDQAOX76WlDXOHB+p5DnlrX5wz4CxRPPfFUlyjc34EhbsD/C593jj0LWaNcoKzusQ==}
+  '@farmfe/core-darwin-arm64@1.0.21':
+    resolution: {integrity: sha512-ocjm76fWVicoiGV5Ie/HBPzjIECiiOGpPGqUosWeysKvVs5wgsTfiOVRmMHnejMd1xwi+dyldsFsvSaJUKCV4A==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [darwin]
 
-  '@farmfe/core-darwin-x64@1.0.20':
-    resolution: {integrity: sha512-ENqFYj0hxTiFXYWq/laExjG6L2hn68Yc9hjnKJnRfLIo8yk6QKnnWQGJ8+sJ4VQA9bEGhv3kHADPWNq4VIardg==}
+  '@farmfe/core-darwin-x64@1.0.21':
+    resolution: {integrity: sha512-J5/x+S2f9Ejgc3AqH1ZgHl0h00vL1eyGNWR0VzehtyskuQnP1yJAMsT/CPCC/S0ACiIx5Pv1gBacIL3/INzUpg==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [darwin]
 
-  '@farmfe/core-linux-arm64-gnu@1.0.20':
-    resolution: {integrity: sha512-7bbeGlN4+Ao40EI0jy3eB1kVGqBmT+Z+dIJ5WCrTHg110DK2KJqXnO20hSOUVL1L+gJqz81MjAr7yalBs0F2wQ==}
+  '@farmfe/core-linux-arm64-gnu@1.0.21':
+    resolution: {integrity: sha512-wKtXjQE3mig7iNKCbQ7L8OJH5e44qVHebbyCZP8+9Nkw6SkMFN1P5PTqRc40x7fzHd0b3G+MSNS/6/OXR9c7Sw==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
 
-  '@farmfe/core-linux-arm64-musl@1.0.20':
-    resolution: {integrity: sha512-4ZiBG1hZ4h3k3K732EcRmaTYg6z8NvroWYCHDEdzb1gHcYPMqCQQB/JRHSr+wpe6N1IUtWJEvaP9f52abhxaAw==}
+  '@farmfe/core-linux-arm64-musl@1.0.21':
+    resolution: {integrity: sha512-wHU4e8r92YhCm8s6FurNsmkRtKO5cCIN+rx44Yznlhh+aKAAP+xjt+xXjf/X/ZBqgCzjvsi6lSlwYQpjvgzFNA==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
 
-  '@farmfe/core-linux-x64-gnu@1.0.20':
-    resolution: {integrity: sha512-AvVu0x77BBZSfwRAAGR4H0EuNsezeKHAQTNPoiNZo2RXs9sI2CXWQl2PX7ntt51YuaXebg0lKBpqNCD4JMWMPg==}
+  '@farmfe/core-linux-x64-gnu@1.0.21':
+    resolution: {integrity: sha512-aL5gwHTM+XmT2jOT9C2oPcENMRqghrag8+Bq5+k0XnowwY6Enoe8DwpfmHY8EhK2DP1AMYAgJOLXmGvT8pp6yw==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
 
-  '@farmfe/core-linux-x64-musl@1.0.20':
-    resolution: {integrity: sha512-B28oRD2Lxu4Upq0UIutw+92ML1BLMg0bVeJhWvhajhTNO2NAXJbsZ0JO9ak1jupOvdlqK8brPU8Gf/vQ9sgyTw==}
+  '@farmfe/core-linux-x64-musl@1.0.21':
+    resolution: {integrity: sha512-/quwYsHTJ47C77pMEyjZtXm+J17rmlhUzUyKOxqVtOE30yohzCL+3DZp1C1wXPV7I6y593pzirMaYITLYjNAKw==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
 
-  '@farmfe/core-win32-arm64-msvc@1.0.20':
-    resolution: {integrity: sha512-1tukkQg7q09HB+6Mmw89LioemGzWXupu/cQ4BOtuADkSkm/yVRlAFR8ZNBcW4e82kBpQCiOKhmaYWx6S0y3YOg==}
+  '@farmfe/core-win32-arm64-msvc@1.0.21':
+    resolution: {integrity: sha512-bucjwF0fHs+O0Ab3HpixLy3X2wiNjsbl+1kcASVJlh9Pl4fnxiKHYZlEq953KaBHxDchHvGKv97gXbTKZS+8sA==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [win32]
 
-  '@farmfe/core-win32-ia32-msvc@1.0.20':
-    resolution: {integrity: sha512-zYhxqXEt+aCXXcnGAwrZG3zKGPkIZDquJZ+UmJ+KrHAu7aPk918nFi/9lmMjPu5CME7iBKnWAbVg43vpFAiK9Q==}
+  '@farmfe/core-win32-ia32-msvc@1.0.21':
+    resolution: {integrity: sha512-SbhhcBTMaOFXdrqW1SdmgmFfhDTJt42itejAwg5oVC5BgYFzb1xHTq0PHitovX0AqUgICgOrSq/wME7r66qiwQ==}
     engines: {node: '>= 10'}
     cpu: [ia32]
     os: [win32]
 
-  '@farmfe/core-win32-x64-msvc@1.0.20':
-    resolution: {integrity: sha512-OmNR0ggs0aWDqXaGC5ESU9t6Idad5RWZC/a4K3VKj5h8XUE5JkOMy2earVudwpWxWLAvJ0VOqZTTijq6vC1HBQ==}
+  '@farmfe/core-win32-x64-msvc@1.0.21':
+    resolution: {integrity: sha512-odAPKcakcXvBSWn1qfi4WPmpfzBdGpuUBbNQ6zgDMuv10IaEfyMoZc97qpawF376YeXTpKzzewTDpK7IC+lWBw==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
 
-  '@farmfe/core@1.0.20':
-    resolution: {integrity: sha512-NL7WRxz2j65izCFrvSvIk2YbVT0ADxEeQUThCo7WYQXQDBosDNMIZ1k+9iL3rAORFqtwBciYdHb+9bWOgHyvtQ==}
+  '@farmfe/core@1.0.21':
+    resolution: {integrity: sha512-Qc4aVREjGvrSL1BfVBim5rqJDrJOMQCyOjUbzM4pfITZqWlk97SN7oJQUSUIHxMDz9sAf27aoFJsaN229lNwzg==}
     engines: {node: '>= 16'}
 
   '@farmfe/js-plugin-less@1.6.2':
@@ -791,8 +791,8 @@ packages:
   '@manypkg/get-packages@1.1.3':
     resolution: {integrity: sha512-fo+QhuU3qE/2TQMQmbVMqaQ6EWbMhi4ABWP+O4AM1NqPBuy0OrApV5LO6BrrgnhtAHS2NH6RrVk9OL181tTi8A==}
 
-  '@mdn/browser-compat-data@5.5.21':
-    resolution: {integrity: sha512-M+KqctZP6J3kIHI+SwQMPbjUM510ex690NRBm0jlFwJ+TNvvuHcp3vCEzUzwtVj5RWEuTROgy5U++3XnN1Przg==}
+  '@mdn/browser-compat-data@5.5.23':
+    resolution: {integrity: sha512-nIy38qL3nfNcGOz5J2BJQpBXa7vM9QO1+wbyvqqS89lgNTWE8Q10whLsmE0sTVBooXiEaRc4fVME5IXjCYiHAw==}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -901,8 +901,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@swc/helpers@0.5.9':
-    resolution: {integrity: sha512-XI76sLwMJoLjJTOK5RblBZkouOJG3X3hjxLCzLnyN1ifAiKQc6Hck3uvnU4Z/dV/Dyk36Ffj8FLvDLV2oWvKTw==}
+  '@swc/helpers@0.5.10':
+    resolution: {integrity: sha512-CU+RF9FySljn7HVSkkjiB84hWkvTaI3rtLvF433+jRSBL2hMu3zX5bGhHS8C80SM++h4xy8hBSnUHFQHmRXSBw==}
 
   '@types/conventional-commits-parser@5.0.0':
     resolution: {integrity: sha512-loB369iXNmAZglwWATL+WRe+CRMmmBPtpolYzIebFaX4YA3x+BEfLqhUAV9WanycKI3TG1IMr5bMJDajDKLlUQ==}
@@ -1222,8 +1222,8 @@ packages:
     resolution: {integrity: sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==}
     engines: {node: '>=6'}
 
-  caniuse-lite@1.0.30001609:
-    resolution: {integrity: sha512-JFPQs34lHKx1B5t1EpQpWH4c+29zIyn/haGsbpfq3suuV9v56enjFt23zqijxGTMwy1p/4H2tjnQMY+p1WoAyA==}
+  caniuse-lite@1.0.30001612:
+    resolution: {integrity: sha512-lFgnZ07UhaCcsSZgWW0K5j4e69dK1u/ltrL9lTUiFOwNHs12S3UMIEYgBV0Z6C6hRDev7iRnMzzYmKabYdXF9g==}
 
   chalk@2.4.2:
     resolution: {integrity: sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==}
@@ -3551,8 +3551,8 @@ packages:
     peerDependencies:
       zod: ^3.18.0
 
-  zod@3.22.4:
-    resolution: {integrity: sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==}
+  zod@3.23.4:
+    resolution: {integrity: sha512-/AtWOKbBgjzEYYQRNfoGKHObgfAZag6qUJX1VbHo2PRBgS+wfWagEY2mizjfyAPcGesrJOcx/wcl0L9WnVrHFw==}
 
 snapshots:
 
@@ -4182,41 +4182,41 @@ snapshots:
       inquirer: 9.2.18
       walkdir: 0.4.1
 
-  '@farmfe/core-darwin-arm64@1.0.20':
+  '@farmfe/core-darwin-arm64@1.0.21':
     optional: true
 
-  '@farmfe/core-darwin-x64@1.0.20':
+  '@farmfe/core-darwin-x64@1.0.21':
     optional: true
 
-  '@farmfe/core-linux-arm64-gnu@1.0.20':
+  '@farmfe/core-linux-arm64-gnu@1.0.21':
     optional: true
 
-  '@farmfe/core-linux-arm64-musl@1.0.20':
+  '@farmfe/core-linux-arm64-musl@1.0.21':
     optional: true
 
-  '@farmfe/core-linux-x64-gnu@1.0.20':
+  '@farmfe/core-linux-x64-gnu@1.0.21':
     optional: true
 
-  '@farmfe/core-linux-x64-musl@1.0.20':
+  '@farmfe/core-linux-x64-musl@1.0.21':
     optional: true
 
-  '@farmfe/core-win32-arm64-msvc@1.0.20':
+  '@farmfe/core-win32-arm64-msvc@1.0.21':
     optional: true
 
-  '@farmfe/core-win32-ia32-msvc@1.0.20':
+  '@farmfe/core-win32-ia32-msvc@1.0.21':
     optional: true
 
-  '@farmfe/core-win32-x64-msvc@1.0.20':
+  '@farmfe/core-win32-x64-msvc@1.0.21':
     optional: true
 
-  '@farmfe/core@1.0.20':
+  '@farmfe/core@1.0.21':
     dependencies:
       '@farmfe/runtime': 0.10.0
       '@farmfe/runtime-plugin-hmr': 3.5.1
       '@farmfe/runtime-plugin-import-meta': 0.2.0
       '@farmfe/utils': 0.1.0
       '@koa/cors': 5.0.0
-      '@swc/helpers': 0.5.9
+      '@swc/helpers': 0.5.10
       browserslist-generator: 2.1.0
       chokidar: 3.6.0
       deepmerge: 4.3.1
@@ -4236,32 +4236,32 @@ snapshots:
       open: 9.1.0
       slashes: 3.0.12
       ws: 8.16.0
-      zod: 3.22.4
-      zod-validation-error: 1.5.0(zod@3.22.4)
+      zod: 3.23.4
+      zod-validation-error: 1.5.0(zod@3.23.4)
     optionalDependencies:
-      '@farmfe/core-darwin-arm64': 1.0.20
-      '@farmfe/core-darwin-x64': 1.0.20
-      '@farmfe/core-linux-arm64-gnu': 1.0.20
-      '@farmfe/core-linux-arm64-musl': 1.0.20
-      '@farmfe/core-linux-x64-gnu': 1.0.20
-      '@farmfe/core-linux-x64-musl': 1.0.20
-      '@farmfe/core-win32-arm64-msvc': 1.0.20
-      '@farmfe/core-win32-ia32-msvc': 1.0.20
-      '@farmfe/core-win32-x64-msvc': 1.0.20
+      '@farmfe/core-darwin-arm64': 1.0.21
+      '@farmfe/core-darwin-x64': 1.0.21
+      '@farmfe/core-linux-arm64-gnu': 1.0.21
+      '@farmfe/core-linux-arm64-musl': 1.0.21
+      '@farmfe/core-linux-x64-gnu': 1.0.21
+      '@farmfe/core-linux-x64-musl': 1.0.21
+      '@farmfe/core-win32-arm64-msvc': 1.0.21
+      '@farmfe/core-win32-ia32-msvc': 1.0.21
+      '@farmfe/core-win32-x64-msvc': 1.0.21
     transitivePeerDependencies:
       - bufferutil
       - debug
       - supports-color
       - utf-8-validate
 
-  '@farmfe/js-plugin-less@1.6.2(@farmfe/core@1.0.20)(less@4.2.0)':
+  '@farmfe/js-plugin-less@1.6.2(@farmfe/core@1.0.21)(less@4.2.0)':
     dependencies:
-      '@farmfe/core': 1.0.20
+      '@farmfe/core': 1.0.21
       less: 4.2.0
 
-  '@farmfe/js-plugin-postcss@1.5.3(@farmfe/core@1.0.20)(postcss@8.4.38)':
+  '@farmfe/js-plugin-postcss@1.5.3(@farmfe/core@1.0.21)(postcss@8.4.38)':
     dependencies:
-      '@farmfe/core': 1.0.20
+      '@farmfe/core': 1.0.21
       postcss: 8.4.38
 
   '@farmfe/plugin-react-darwin-arm64@1.0.1':
@@ -4385,7 +4385,7 @@ snapshots:
       globby: 11.1.0
       read-yaml-file: 1.1.0
 
-  '@mdn/browser-compat-data@5.5.21': {}
+  '@mdn/browser-compat-data@5.5.23': {}
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -4459,7 +4459,7 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.14.2':
     optional: true
 
-  '@swc/helpers@0.5.9':
+  '@swc/helpers@0.5.10':
     dependencies:
       tslib: 2.6.2
 
@@ -4745,7 +4745,7 @@ snapshots:
   autoprefixer@10.4.19(postcss@8.4.38):
     dependencies:
       browserslist: 4.23.0
-      caniuse-lite: 1.0.30001609
+      caniuse-lite: 1.0.30001612
       fraction.js: 4.3.7
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -4796,12 +4796,12 @@ snapshots:
 
   browserslist-generator@2.1.0:
     dependencies:
-      '@mdn/browser-compat-data': 5.5.21
+      '@mdn/browser-compat-data': 5.5.23
       '@types/object-path': 0.11.4
       '@types/semver': 7.5.8
       '@types/ua-parser-js': 0.7.39
       browserslist: 4.23.0
-      caniuse-lite: 1.0.30001609
+      caniuse-lite: 1.0.30001612
       isbot: 3.8.0
       object-path: 0.11.8
       semver: 7.6.0
@@ -4809,7 +4809,7 @@ snapshots:
 
   browserslist@4.23.0:
     dependencies:
-      caniuse-lite: 1.0.30001609
+      caniuse-lite: 1.0.30001612
       electron-to-chromium: 1.4.736
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.23.0)
@@ -4852,7 +4852,7 @@ snapshots:
 
   camelcase@5.3.1: {}
 
-  caniuse-lite@1.0.30001609: {}
+  caniuse-lite@1.0.30001612: {}
 
   chalk@2.4.2:
     dependencies:
@@ -7250,8 +7250,8 @@ snapshots:
 
   yocto-queue@1.0.0: {}
 
-  zod-validation-error@1.5.0(zod@3.22.4):
+  zod-validation-error@1.5.0(zod@3.23.4):
     dependencies:
-      zod: 3.22.4
+      zod: 3.23.4
 
-  zod@3.22.4: {}
+  zod@3.23.4: {}
