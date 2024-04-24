@@ -17,10 +17,10 @@
       ],
     },
     {
-      matchPackagePatterns: [
+      "excludePackagePatterns": [
         "^(?!@farmfe/).*$"
       ],
-      enable: false,
+      "enalble": "false",
     }
   ],
 }
