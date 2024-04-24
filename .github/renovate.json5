@@ -25,7 +25,7 @@
       ],
     },
     {
-      "packagePatterns": ["^(?!@farmfe/).*$"],
+      "matchPackagePatterns": ["^(?!@farmfe/).*$"],
       "enabled": false
     }
   ],
