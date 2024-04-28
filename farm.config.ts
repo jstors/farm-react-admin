@@ -3,6 +3,7 @@ import { vitePluginForArco } from '@arco-plugins/vite-react';
 import { defineConfig } from '@farmfe/core';
 import less from '@farmfe/js-plugin-less';
 import postcss from '@farmfe/js-plugin-postcss';
+import { viteMockServe } from 'vite-plugin-mock';
 import Pages from 'vite-plugin-pages';
 
 export default defineConfig({
@@ -37,6 +38,10 @@ export default defineConfig({
     }),
     vitePluginForArco({
       theme: '@arco-themes/react-juzi001',
+    }),
+    viteMockServe({
+      mockPath: 'mock',
+      enable: true,
     }),
   ],
 });
