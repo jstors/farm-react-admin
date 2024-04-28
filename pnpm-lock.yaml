@@ -11,6 +11,9 @@ dependencies:
   '@arco-themes/react-juzi001':
     specifier: ^0.0.1
     version: 0.0.1(@arco-design/web-react@2.61.3)
+  '@tanstack/react-query':
+    specifier: ^5.32.0
+    version: 5.32.0(react@18.2.0)
   classnames:
     specifier: ^2.5.1
     version: 2.5.1
@@ -61,6 +64,9 @@ devDependencies:
   '@farmfe/plugin-react':
     specifier: ^1.0.1
     version: 1.0.1
+  '@tanstack/react-query-devtools':
+    specifier: ^5.32.0
+    version: 5.32.0(@tanstack/react-query@5.32.0)(react@18.2.0)
   '@types/react':
     specifier: ^18.2.78
     version: 18.2.78
@@ -1445,6 +1451,32 @@ packages:
     dependencies:
       tslib: 2.6.2
     dev: true
+
+  /@tanstack/query-core@5.32.0:
+    resolution: {integrity: sha512-Z3flEgCat55DRXU5UMwYU1U+DgFZKA3iufyOKs+II7iRAo0uXkeU7PH5e6sOH1CGEag0IpKmZxlUFpCg6roSKw==}
+
+  /@tanstack/query-devtools@5.28.10:
+    resolution: {integrity: sha512-5UN629fKa5/1K/2Pd26gaU7epxRrYiT1gy+V+pW5K6hnf1DeUKK3pANSb2eHKlecjIKIhTwyF7k9XdyE2gREvQ==}
+    dev: true
+
+  /@tanstack/react-query-devtools@5.32.0(@tanstack/react-query@5.32.0)(react@18.2.0):
+    resolution: {integrity: sha512-KWrzLoUjs9JtDSH3H2qbm5MjjykyAT8DkvP8tukw3gBG4ziu5WaWHciBjMsYSe1JB79AOxxGovzjW/Cd9+ofVw==}
+    peerDependencies:
+      '@tanstack/react-query': ^5.32.0
+      react: ^18.0.0
+    dependencies:
+      '@tanstack/query-devtools': 5.28.10
+      '@tanstack/react-query': 5.32.0(react@18.2.0)
+      react: 18.2.0
+    dev: true
+
+  /@tanstack/react-query@5.32.0(react@18.2.0):
+    resolution: {integrity: sha512-+E3UudQtarnx9A6xhpgMZapyF+aJfNBGFMgI459FnduEZqT/9KhOWnMOneZahLRt52yzskSA0AuOyLkXHK0yBA==}
+    peerDependencies:
+      react: ^18.0.0
+    dependencies:
+      '@tanstack/query-core': 5.32.0
+      react: 18.2.0
 
   /@types/conventional-commits-parser@5.0.0:
     resolution: {integrity: sha512-loB369iXNmAZglwWATL+WRe+CRMmmBPtpolYzIebFaX4YA3x+BEfLqhUAV9WanycKI3TG1IMr5bMJDajDKLlUQ==}
@@ -3980,7 +4012,6 @@ packages:
     hasBin: true
     dependencies:
       js-tokens: 4.0.0
-    dev: false
 
   /lru-cache@10.2.0:
     resolution: {integrity: sha512-2bIM8x+VAf6JT4bKAljS1qUWgMsqZRPGJS6FSahIMPVvctcNhyVp7AJu7quxOW9jwkryBReKZY5tY5JYv2n/7Q==}
@@ -4755,7 +4786,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       loose-envify: 1.4.0
-    dev: false
 
   /read-cache@1.0.0:
     resolution: {integrity: sha512-Owdv/Ft7IjOgm/i0xvNDZ1LrRANRfew4b2prF3OWMQLxLfu3bS8FVhCsrSCMK4lR56Y9ya+AThoTpDCTxCmpRA==}

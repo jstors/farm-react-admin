@@ -8,6 +8,7 @@ import Pages from 'vite-plugin-pages';
 
 export default defineConfig({
   compilation: {
+    minify: false,
     resolve: {
       alias: {
         '@/': path.join(process.cwd(), 'src'),

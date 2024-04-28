@@ -1,26 +1,38 @@
 import { TOKEN_KEY } from '@/config/const';
 import { setCookie } from '@/utils/cookie';
 import { Button, Form, Input, Message } from '@arco-design/web-react';
+import { useMutation } from '@tanstack/react-query';
 import React from 'react';
 import { useNavigate } from 'react-router';
+
 const FormItem = Form.Item;
 
 const initialValues = {
-  username: 'farm',
+  username: 'farmer',
   password: '123456',
 };
 
 const LoginForm = () => {
   const go = useNavigate();
+
+  const { mutate, isPending } = useMutation({
+    mutationFn: async (params) => {
+      const response = await fetch('/basic-api/login', { method: 'POST', body: JSON.stringify(params) });
+      return response.json();
+    },
+    onSuccess: () => {
+      setCookie(TOKEN_KEY, new Date().getTime(), 1);
+      Message.success('登录成功');
+      go('/');
+    },
+  });
+
   /**
-   *
+   * 登录
    * @param value
    */
   const handleLogin = async (value) => {
-    // TODO complete login logic
-    setCookie(TOKEN_KEY, new Date().getTime(), 1);
-    Message.success('登录成功');
-    go('/');
+    mutate(value);
   };
 
   return (
@@ -33,7 +45,7 @@ const LoginForm = () => {
           <Input.Password placeholder="请输入密码" />
         </FormItem>
         <FormItem>
-          <Button type="primary" htmlType="submit">
+          <Button type="primary" htmlType="submit" loading={isPending}>
             登录
           </Button>
         </FormItem>

@@ -8,7 +8,6 @@ export default function useRouterGuard(callback?: () => void) {
   const go = useNavigate();
 
   useEffect(() => {
-    console.log('🤖 == useEffect == location:', location);
     if (location.pathname !== LOGIN_PATH) {
       const token = getCookie(TOKEN_KEY);
       if (!token) {

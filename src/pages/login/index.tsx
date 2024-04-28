@@ -5,6 +5,7 @@ import LogoSvg from '../../assets/login.svg';
 import RegisterSvg from '../../assets/register.svg';
 import LoginForm from './loginForm';
 import RegisterForm from './registerForm';
+
 import './style.less';
 
 export enum LoginMode {
