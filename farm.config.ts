@@ -3,6 +3,7 @@ import { vitePluginForArco } from '@arco-plugins/vite-react';
 import { defineConfig } from '@farmfe/core';
 import less from '@farmfe/js-plugin-less';
 import postcss from '@farmfe/js-plugin-postcss';
+import farmRemoveConsole from 'farm-plugin-remove-console';
 import Pages from 'vite-plugin-pages';
 
 export default defineConfig({
@@ -26,7 +27,11 @@ export default defineConfig({
         runtime: 'automatic',
       },
     ],
-    'farm-plugin-remove-console',
+    // 'farm-plugin-remove-console',
+    // @ts-ignore
+    farmRemoveConsole({
+      include: ['src'],
+    }),
     less(),
     postcss(),
   ],

@@ -71,8 +71,8 @@ devDependencies:
     specifier: ^3.36.1
     version: 3.36.1
   farm-plugin-remove-console:
-    specifier: ^0.1.2
-    version: 0.1.2
+    specifier: ^0.1.3
+    version: 0.1.3
   husky:
     specifier: ^9.0.11
     version: 9.0.11
@@ -2674,8 +2674,8 @@ packages:
       parse-code-context: 1.0.0
     dev: true
 
-  /farm-plugin-remove-console-darwin-arm64@0.1.2:
-    resolution: {integrity: sha512-erXxzVQiGW2WllLltnZXx0sNgHSuqV35zOdGGLt3G0ZZ+I/72aMAL9TRQO3hd0YsgQRWTWCf0Ej0+RXm7qGreA==}
+  /farm-plugin-remove-console-darwin-arm64@0.1.3:
+    resolution: {integrity: sha512-rfnnBUsc2vcjvxIhTGsEYSRs4+VDoVFxAOs64FG9MDEgIPPlqPei966miutArz8c2nUrYDegvtJFLqip3dS+ig==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [darwin]
@@ -2683,8 +2683,8 @@ packages:
     dev: true
     optional: true
 
-  /farm-plugin-remove-console-darwin-x64@0.1.2:
-    resolution: {integrity: sha512-kEVBUlAKGy6QM8qxPjcLcGBFbI1TstC0Xy7RfPa6ls7eQPmcOkcMBccJxLcd0YphFI+REe42bFzzOoCAS8qIKA==}
+  /farm-plugin-remove-console-darwin-x64@0.1.3:
+    resolution: {integrity: sha512-kC/7eLHmCMJmXqccifCm/4rF+u0Vtf+iHlru/IDQv+d+XK2rw3xKFB/VB7fJn6+INApcplNARdblRz5HP8y07g==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [darwin]
@@ -2692,8 +2692,8 @@ packages:
     dev: true
     optional: true
 
-  /farm-plugin-remove-console-linux-arm64-gnu@0.1.2:
-    resolution: {integrity: sha512-cb2ZsjYc6qbTP8beayLT3kz+MzmyC8e6GUshQhYWjgiRs/TC0Imv3x/my+LCTQPQbnOq7YKoYO8lMKnzQ8O3vw==}
+  /farm-plugin-remove-console-linux-arm64-gnu@0.1.3:
+    resolution: {integrity: sha512-XA0Bpc2jSz9Yu2upI7xyiawZk9Z6s/JsUkzzUEJeOqQM1DhUI/MN9+KPNHHLIp2AuUpTWp00S1TjR+gunKrRSw==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
@@ -2701,8 +2701,8 @@ packages:
     dev: true
     optional: true
 
-  /farm-plugin-remove-console-linux-arm64-musl@0.1.2:
-    resolution: {integrity: sha512-b+Rpxc1mur+pkTT5AwbG1Ydms/joGJvP6HqdXEDpAMgN860TA5aP6BMLaFCxRVt2ZopelEqGPDNUsZBLGfCpVA==}
+  /farm-plugin-remove-console-linux-arm64-musl@0.1.3:
+    resolution: {integrity: sha512-3pKScwFV+4Yq9ZQ9G++aIAyqfYuHzIiJ13+jFY1aDhz0LuzExMQTBKvg6TCzWdvNCVc+/AUSknhru95WG7YvnA==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
@@ -2710,8 +2710,8 @@ packages:
     dev: true
     optional: true
 
-  /farm-plugin-remove-console-linux-x64-gnu@0.1.2:
-    resolution: {integrity: sha512-JtiBmJVRfwqLFnz1xdDqKbxDenQdt39v2RN4a7E33e24MGYb7cPcBBPXoIaXMB75UlSflmHKsIK24Zp7O346kg==}
+  /farm-plugin-remove-console-linux-x64-gnu@0.1.3:
+    resolution: {integrity: sha512-rYnqcTRf1YBLFdcnIehNiRJ4x+c3TloY9ipIB7/z3srGtdYG8unYi0IUVQkUwFsh4S59MgVoah5WlhCRSfDr6w==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
@@ -2719,8 +2719,8 @@ packages:
     dev: true
     optional: true
 
-  /farm-plugin-remove-console-linux-x64-musl@0.1.2:
-    resolution: {integrity: sha512-8L6oQwtZndAU0ksaVVGNV5Gf/YGa/B73y560+36W/1zsyZk2gLg19G0cjRALIo+tPJvJHosKMSRU5D5T/cRFdg==}
+  /farm-plugin-remove-console-linux-x64-musl@0.1.3:
+    resolution: {integrity: sha512-o/MuNvJA/C4mRScM++D1HBVziBUBhpJAsBOk325XjkD9JJjJCjbEFNg4s5n0VRUK53t/QrtIKsyTpCE5rPyuJA==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
@@ -2728,8 +2728,8 @@ packages:
     dev: true
     optional: true
 
-  /farm-plugin-remove-console-win32-arm64-msvc@0.1.2:
-    resolution: {integrity: sha512-ZwtBo4pFYWI5ArV6CBU01XTpnsKzOjnAy3E07dFrrEHcZ9xd8yZeioCDN1oG1cLKd1mZfPQokmLdu/RmUKzgYQ==}
+  /farm-plugin-remove-console-win32-arm64-msvc@0.1.3:
+    resolution: {integrity: sha512-IOnmBFntLapfZ1vURcjFU63FungxtVcayR1YYI2TcizJVnjT8p8vHZSLx4JDoC41LAsoTV3T75rWU5X3afIfUw==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [win32]
@@ -2737,8 +2737,8 @@ packages:
     dev: true
     optional: true
 
-  /farm-plugin-remove-console-win32-ia32-msvc@0.1.2:
-    resolution: {integrity: sha512-SNfqRXDn3UkMcYOxytY5w31tff49OsaKiOSZCr+0ZeTd8vvg4J3ZNqRsUEPO0qp3DlkIsDfYOD8P54Mg0U5+5g==}
+  /farm-plugin-remove-console-win32-ia32-msvc@0.1.3:
+    resolution: {integrity: sha512-eLNbgEWet1s5KkHnWjeKVTT9UYt4/1GO/oC410/VMyEpar4RziVwf9QjM2Rjs11VrZDe5LPOM4O9Bf7V704XPg==}
     engines: {node: '>= 10'}
     cpu: [ia32]
     os: [win32]
@@ -2746,8 +2746,8 @@ packages:
     dev: true
     optional: true
 
-  /farm-plugin-remove-console-win32-x64-msvc@0.1.2:
-    resolution: {integrity: sha512-8c4yYuredZtjxwHHv4MN66ByGV07hMfz+5U5BabrS21Eurpla5oKVanVHzBZSKv4aVgcD6YqvOqfOYIzUZn/UA==}
+  /farm-plugin-remove-console-win32-x64-msvc@0.1.3:
+    resolution: {integrity: sha512-ya4Bg9CL/hxweKSefbjdPY6++Ul2Sh7nTO3zEr+oz2oftAv8H0vj3p2Rrs/2V7UDd9NxvM8o+CgViDnwyfHggA==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
@@ -2755,22 +2755,22 @@ packages:
     dev: true
     optional: true
 
-  /farm-plugin-remove-console@0.1.2:
-    resolution: {integrity: sha512-ThNKF/EybSxsRnVWjlKRgKXd6lkNYSjzEm9qu9RqCw7dQihoet07QNaTkXLbyPMa4v06SCZRC5TqrxQFtKnUdA==}
+  /farm-plugin-remove-console@0.1.3:
+    resolution: {integrity: sha512-KbfQanWiLIJlJIWPqkonnBm1GPK+Ggp04ErGERkBNL1lFvorQclMIncUe8Q0IKklko3bB/RW1zE5yrMGKYLsZw==}
     dependencies:
       '@changesets/cli': 2.27.1
       '@farmfe/utils': 0.0.1
       cac: 6.7.14
     optionalDependencies:
-      farm-plugin-remove-console-darwin-arm64: 0.1.2
-      farm-plugin-remove-console-darwin-x64: 0.1.2
-      farm-plugin-remove-console-linux-arm64-gnu: 0.1.2
-      farm-plugin-remove-console-linux-arm64-musl: 0.1.2
-      farm-plugin-remove-console-linux-x64-gnu: 0.1.2
-      farm-plugin-remove-console-linux-x64-musl: 0.1.2
-      farm-plugin-remove-console-win32-arm64-msvc: 0.1.2
-      farm-plugin-remove-console-win32-ia32-msvc: 0.1.2
-      farm-plugin-remove-console-win32-x64-msvc: 0.1.2
+      farm-plugin-remove-console-darwin-arm64: 0.1.3
+      farm-plugin-remove-console-darwin-x64: 0.1.3
+      farm-plugin-remove-console-linux-arm64-gnu: 0.1.3
+      farm-plugin-remove-console-linux-arm64-musl: 0.1.3
+      farm-plugin-remove-console-linux-x64-gnu: 0.1.3
+      farm-plugin-remove-console-linux-x64-musl: 0.1.3
+      farm-plugin-remove-console-win32-arm64-msvc: 0.1.3
+      farm-plugin-remove-console-win32-ia32-msvc: 0.1.3
+      farm-plugin-remove-console-win32-x64-msvc: 0.1.3
     dev: true
 
   /fast-deep-equal@3.1.3:
