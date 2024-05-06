@@ -27,6 +27,13 @@ export default defineConfig({
       },
     ],
     'farm-plugin-remove-console',
+    ["@jstors/farm-plugin-html-template",
+     {
+      template: path.resolve(__dirname, 'index.html'),
+      data: {
+        title: 'Farm React Admin',
+      }
+    }],
     less(),
     postcss(),
   ],
