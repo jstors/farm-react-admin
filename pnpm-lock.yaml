@@ -58,6 +58,9 @@ devDependencies:
   '@farmfe/plugin-react':
     specifier: ^1.0.1
     version: 1.0.1
+  '@jstors/farm-plugin-html-template':
+    specifier: ^0.0.2
+    version: 0.0.2
   '@types/react':
     specifier: ^18.2.78
     version: 18.2.78
@@ -1241,6 +1244,20 @@ packages:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
+    dev: true
+
+  /@jstors/farm-plugin-html-template@0.0.2:
+    resolution: {integrity: sha512-sDHGSx6tzeGdUdhNZwdyOiWXe40b3LxAQnAoXN0CDh5uw4dnHVx06djlCvHItdlJ+cUD7xeAkBM4VFTd5t/cDw==}
+    optionalDependencies:
+      farm-plugin-html-template-darwin-arm64: 0.0.2
+      farm-plugin-html-template-darwin-x64: 0.0.2
+      farm-plugin-html-template-linux-arm64-gnu: 0.0.2
+      farm-plugin-html-template-linux-arm64-musl: 0.0.2
+      farm-plugin-html-template-linux-x64-gnu: 0.0.2
+      farm-plugin-html-template-linux-x64-musl: 0.0.2
+      farm-plugin-html-template-win32-arm64-msvc: 0.0.2
+      farm-plugin-html-template-win32-ia32-msvc: 0.0.2
+      farm-plugin-html-template-win32-x64-msvc: 0.0.2
     dev: true
 
   /@koa/cors@5.0.0:
@@ -2673,6 +2690,87 @@ packages:
       esprima-extract-comments: 1.1.0
       parse-code-context: 1.0.0
     dev: true
+
+  /farm-plugin-html-template-darwin-arm64@0.0.2:
+    resolution: {integrity: sha512-3MjEZELt9oLUjN5voYJglZRUGvIrEMEfsxrjKafvxdHoGhMWu0clTCaE/ef2LuuQYCNyq4cqYAAqz41E+0B6vQ==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /farm-plugin-html-template-darwin-x64@0.0.2:
+    resolution: {integrity: sha512-+RK6zUmcMpgjYfuwvW28eNHYBbnH1eB0XNPhWtZ09X0I4pHz3vaypNkmynAxgMUMY1x+Imsz5AgUj+jY0RqQEA==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /farm-plugin-html-template-linux-arm64-gnu@0.0.2:
+    resolution: {integrity: sha512-mo9ETMcttmlzSVv5bUMlS36IzcaynvzVmFX9O4glm1t3JS81cF3Loh8xHfY1F/GuKVSVD6Scf+DG43x72PcVZA==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /farm-plugin-html-template-linux-arm64-musl@0.0.2:
+    resolution: {integrity: sha512-NBcnRq0Y+Dehlo37zAf6nT4v8U31CyhEbzCd11/2AW763QzUlq/v1xlNwxS8WI4l4WaJqicCO4BtjLb3K7Ar3Q==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /farm-plugin-html-template-linux-x64-gnu@0.0.2:
+    resolution: {integrity: sha512-WetBjvYBjWH1J9V1dtR6+pupfuuXm9PyIxJ7Y5Q0AWDOCzY8VKSfbY2Cw5npk+o5ltek3DCBkou9u/o/Pa1zyQ==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /farm-plugin-html-template-linux-x64-musl@0.0.2:
+    resolution: {integrity: sha512-ZpFkLJHXLLlBKDsfuwlajBMV8STD75tLXUz12+ZYc5BumvzcR7waERg3mcH3H3A06zCePhfG1g4/6cHVpV2o4A==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /farm-plugin-html-template-win32-arm64-msvc@0.0.2:
+    resolution: {integrity: sha512-nbuCsmignbl6mF10tG1Ed/tNdbFE5tGfzsXjwO4IQXvGqFCZfr6RnsqTS2wcLReTmu5wqYk0T4stWlbrskALjQ==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /farm-plugin-html-template-win32-ia32-msvc@0.0.2:
+    resolution: {integrity: sha512-uBXuscw7791reMIGmYXI4v5a2SiS/UQ4kfOUpY9lSGvhhijlJcQIoaioLmCSN3k7CMK96aV4lXxNPURvf/4jyA==}
+    engines: {node: '>= 10'}
+    cpu: [ia32]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /farm-plugin-html-template-win32-x64-msvc@0.0.2:
+    resolution: {integrity: sha512-0TzChCeBc81k/LS84B13plLf6l0292W1vwJJINNb8Gl2ytkKJ15fuffMNbQLtwcLOY3/PB+AonJlwkaRYRd5tQ==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
 
   /farm-plugin-remove-console-darwin-arm64@0.1.2:
     resolution: {integrity: sha512-erXxzVQiGW2WllLltnZXx0sNgHSuqV35zOdGGLt3G0ZZ+I/72aMAL9TRQO3hd0YsgQRWTWCf0Ej0+RXm7qGreA==}

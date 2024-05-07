@@ -35,6 +35,7 @@
     "@farmfe/js-plugin-less": "^1.7.0",
     "@farmfe/js-plugin-postcss": "^1.6.0",
     "@farmfe/plugin-react": "^1.0.1",
+    "@jstors/farm-plugin-html-template": "^0.0.2",
     "@types/react": "^18.2.78",
     "@types/react-dom": "^18.2.25",
     "autoprefixer": "^10.4.19",
@@ -48,6 +49,8 @@
     "vite-plugin-pages": "^0.32.1"
   },
   "lint-staged": {
-    "*": ["pnpm check"]
+    "*": [
+      "pnpm check"
+    ]
   }
 }
