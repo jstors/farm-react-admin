@@ -1,4 +1,4 @@
-import menuConfig from '@/config/menu';
+import menuConfig from '@/router/menu';
 import { Menu, Slider } from '@arco-design/web-react';
 import { IconApps, IconBug, IconBulb } from '@arco-design/web-react/icon';
 import React, { useState } from 'react';

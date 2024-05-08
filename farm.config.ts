@@ -4,6 +4,7 @@ import { defineConfig } from '@farmfe/core';
 import less from '@farmfe/js-plugin-less';
 import postcss from '@farmfe/js-plugin-postcss';
 import Pages from 'vite-plugin-pages';
+import { adminInfo } from './global.config';
 
 export default defineConfig({
   compilation: {
@@ -12,9 +13,7 @@ export default defineConfig({
         '@/': path.join(process.cwd(), 'src'),
       },
     },
-    persistentCache: {
-      buildDependencies: ['tailwind.config.js'],
-    },
+    persistentCache: false,
     runtime: {
       isolate: true,
     },
@@ -27,13 +26,13 @@ export default defineConfig({
       },
     ],
     'farm-plugin-remove-console',
-    ["@jstors/farm-plugin-html-template",
-     {
-      template: path.resolve(__dirname, 'index.html'),
-      data: {
-        title: 'Farm React Admin',
-      }
-    }],
+    [
+      '@jstors/farm-plugin-html-template',
+      {
+        template: path.resolve(__dirname, 'index.html'),
+        data: adminInfo,
+      },
+    ],
     less(),
     postcss(),
   ],
@@ -41,6 +40,7 @@ export default defineConfig({
     Pages({
       resolver: 'react',
       moduleId: '~react-pages',
+      importMode: 'async',
     }),
     vitePluginForArco({
       theme: '@arco-themes/react-juzi001',
