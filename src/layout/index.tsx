@@ -1,7 +1,9 @@
-import { INDEPENDENT_ROUTES } from '@/config/const';
+import { INDEPENDENT_ROUTES } from '@/router/const';
 import { Layout, Spin } from '@arco-design/web-react';
-import React, { Suspense, useState } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
+import React, { Suspense, useEffect, useState } from 'react';
 import { useLocation, useRoutes } from 'react-router';
+import Animate from './animate';
 import CustomHeader from './header';
 import Menu from './menu';
 import './style.less';
@@ -39,7 +41,9 @@ const CustomLayout = ({ routers = [] }) => {
   return (
     <>
       {isIndependent ? (
-        <Suspense fallback={<Spin dot />}>{useRoutes(routers)}</Suspense>
+        <Animate>
+          <Suspense fallback={<Spin dot />}>{useRoutes(routers)}</Suspense>
+        </Animate>
       ) : (
         <Layout className="h-[100vh]">
           <Layout>
@@ -59,8 +63,11 @@ const CustomLayout = ({ routers = [] }) => {
               <Header>
                 <CustomHeader />
               </Header>
-              <Content className="m-1 p-2 rounded bg-[var(--color-bg-1)]">
-                <Suspense fallback={<Spin dot />}>{useRoutes(routers)}</Suspense>
+
+              <Content className=" relative m-1 p-2 rounded bg-[var(--color-bg-1)]">
+                <Suspense fallback={<Spin className="absolute inset-0 flex justify-center items-center" dot />}>
+                  <Animate>{useRoutes(routers)}</Animate>
+                </Suspense>
               </Content>
             </div>
           </Layout>

@@ -1,4 +1,4 @@
-import { TOKEN_KEY } from '@/config/const';
+import { TOKEN_KEY } from '@/router/const';
 import { setCookie } from '@/utils/cookie';
 import { Button, Form, Input, Message } from '@arco-design/web-react';
 import React from 'react';

@@ -1,5 +1,5 @@
 import DefaultAvatar from '@/assets/logo.png';
-import { LOGIN_PATH, TOKEN_KEY } from '@/config/const';
+import { LOGIN_PATH, TOKEN_KEY } from '@/router/const';
 import { setCookie } from '@/utils/cookie';
 import { Avatar, Button, Dropdown, Menu, Space } from '@arco-design/web-react';
 import React from 'react';
