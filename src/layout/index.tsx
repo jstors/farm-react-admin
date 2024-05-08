@@ -65,7 +65,9 @@ const CustomLayout = ({ routers = [] }) => {
               </Header>
 
               <Content className=" relative m-1 p-2 rounded bg-[var(--color-bg-1)]">
-                <Suspense fallback={<Spin className="absolute inset-0 flex justify-center items-center" dot />}>
+                <Suspense
+                  fallback={<Spin className="absolute inset-0 flex justify-center items-center h-[80vh]" dot />}
+                >
                   <Animate>{useRoutes(routers)}</Animate>
                 </Suspense>
               </Content>
