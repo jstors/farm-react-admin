@@ -10,9 +10,9 @@ const RegisterTabs = ({onTabChange}) => {
     onTabChange(tabVal)
   }
   return (
-    <Tabs defaultActiveTab={REGISTER_TYPE.EMAIL} onChange={handleTab} className="w-1/2 tab">
-      { TAB_LIST.filter(v => v.show).map(tab => {
-        return <TabPane key={tab.key} title={tab.title}></TabPane>
+    <Tabs defaultActiveTab={REGISTER_TYPE.EMAIL} onChange={handleTab} className="tab">
+      { TAB_LIST.map(tab => {
+        return <TabPane key={tab.value} title={tab.tabTitle}></TabPane>
       })}
     </Tabs>
   )
