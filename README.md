@@ -37,7 +37,6 @@
 All configuration files are located in the `config` directory and can be modified according to your needs.
 - `config/const.ts`: Contains constants used in the project.
 - `config/menu.ts`: Menu configuration
-- 
 
 ## Integrated Features
 - [Farm](https://farm-fe.github.io/en/docs/quick-start): A Rust-based foundation framework that provides a complete development experience.
