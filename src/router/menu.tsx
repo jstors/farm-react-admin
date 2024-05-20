@@ -1,14 +1,20 @@
-import { IconApps, IconCommon } from '@arco-design/web-react/icon';
+import { IconApps, IconCommon, IconDashboard, IconHome } from '@arco-design/web-react/icon';
 import React from 'react';
 
 export default [
   {
-    title: '菜单1',
-    icon: <IconApps />,
+    title: '工作台',
+    icon: <IconHome />,
+    path: '/',
+  },
+  {
+    title: '数据看板',
+    icon: <IconDashboard />,
     subMenu: [
       {
         title: '菜单1-1',
         path: '/about',
+        icon: <IconApps />,
       },
       {
         title: '菜单1-2',
@@ -16,9 +22,5 @@ export default [
         icon: <IconCommon />,
       },
     ],
-  },
-  {
-    title: '非嵌套菜单',
-    path: '/',
   },
 ];

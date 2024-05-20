@@ -25,6 +25,8 @@ export default defineConfig({
         runtime: 'automatic',
       },
     ],
+    less(),
+    postcss(),
     'farm-plugin-remove-console',
     [
       '@jstors/farm-plugin-html-template',
@@ -33,8 +35,6 @@ export default defineConfig({
         data: adminInfo,
       },
     ],
-    less(),
-    postcss(),
   ],
   vitePlugins: [
     Pages({
