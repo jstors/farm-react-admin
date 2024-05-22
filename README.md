@@ -41,5 +41,5 @@ All configuration files are located in the `config` directory and can be modifie
 ## Integrated Features
 - [Farm](https://farm-fe.github.io/en/docs/quick-start): A Rust-based foundation framework that provides a complete development experience.
 - [Biome](https://biomejs.dev/en/reference/configuration/#javascriptformatterjsxquotestyle): A Rust-based linting and formatting tool that enhances the development experience.
-- [arco-design](https://arco.design/en/docs/start): An out-of-the-box React component library.
+- [Ant Design](https://ant.design/components/overview-cn/): An out-of-the-box React component library, use version 5.x.
 - [vite-plugin-pages](https://github.com/hannoeru/vite-plugin-pages?tab=readme-ov-file#react-1): Provides a routing system based on conventions.
