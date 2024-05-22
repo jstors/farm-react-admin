@@ -2,6 +2,8 @@ import { AnimatePresence, motion } from 'framer-motion';
 import React from 'react';
 
 const Animate = ({ children }) => {
+  const DURATION = 0.2;
+
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -20,7 +22,7 @@ const Animate = ({ children }) => {
         initial={{ x: -200 }}
         animate={{ x: 0 }}
         exit={{ x: 2000 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: DURATION }}
       >
         <motion.div
           key={location.pathname}
@@ -28,7 +30,7 @@ const Animate = ({ children }) => {
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{
-            duration: 0.3,
+            duration: DURATION,
             ease: 'easeIn',
           }}
         >
