@@ -36,7 +36,7 @@ const CustomMenu = ({ collapsed }) => {
             key={item.path}
             title={
               <>
-                {item?.icon}
+                <span className="mr-2">{item?.icon}</span>
                 {item.title}
               </>
             }
@@ -47,7 +47,7 @@ const CustomMenu = ({ collapsed }) => {
       }
       return (
         <MenuItem key={item.path}>
-          {item?.icon}
+          <span className="mr-2">{item?.icon}</span>
           {item.title}
         </MenuItem>
       );

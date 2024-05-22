@@ -1,18 +1,9 @@
 import { ConfigProvider } from 'antd';
 import React from 'react';
-
-const config = {
-  token: {
-    colorPrimary: '#9d4edc',
-    colorInfo: '#9d4edc',
-  },
-  cssVar: {
-    prefix: 'farm',
-  },
-};
+import { theme } from '../../global.config';
 
 const CustomTheme = ({ children }) => {
-  return <ConfigProvider theme={config}>{children}</ConfigProvider>;
+  return <ConfigProvider theme={theme}>{children}</ConfigProvider>;
 };
 
 export default CustomTheme;
