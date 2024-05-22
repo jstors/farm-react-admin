@@ -1,7 +1,7 @@
 import { TOKEN_KEY } from '@/router/const';
 import { setCookie } from '@/utils/cookie';
 import { validateEmail, validatePhone } from '@/utils/validate';
-import { Button, Form, Input, Message } from '@arco-design/web-react';
+import { Button, Form, Input, message } from 'antd';
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router';
 import RegisterTabs from './RegisterTabs';
@@ -26,7 +26,7 @@ const RegisterForm = () => {
     console.log('注册表单参数', value);
     // TODO complete register logic
     setCookie(TOKEN_KEY, new Date().getTime(), 1);
-    Message.success('注册成功');
+    message.success('注册成功');
     go('/');
   };
 
@@ -67,28 +67,22 @@ const RegisterForm = () => {
   return (
     <div className="form register-form">
       {/* Form wrapperCol 默认19 */}
-      <Form form={form} onSubmit={handleRegister} className="w-1/2">
+      <Form form={form} onFinish={handleRegister} className="w-1/2">
         <FormItem>
           <RegisterTabs onTabChange={handleTabChange} />
         </FormItem>
-        <FormItem field="username" rules={[{ required: true, message: placeholder }, { validator: accountValidator }]}>
-          <Input
-            normalizeTrigger={['onBlur']}
-            normalize={(v) => (v ? v.trim() : v)}
-            placeholder={placeholder}
-            style={{ width: '100%' }}
-          />
+        <FormItem name="username" rules={[{ required: true, message: placeholder }, { validator: accountValidator }]}>
+          <Input placeholder={placeholder} style={{ width: '100%' }} />
         </FormItem>
-        <FormItem field="password" rules={[{ required: true, message: '请输入密码' }]}>
+        <FormItem name="password" rules={[{ required: true, message: '请输入密码' }]}>
           <Input.Password
-            normalizeTrigger={['onBlur']}
             normalize={(v) => (v ? v.trim() : v)}
             onChange={(val) => setPassword(val)}
             placeholder="请输入密码"
           />
         </FormItem>
         <FormItem
-          field="confirmPassword"
+          name="confirmPassword"
           rules={[{ required: true, message: '请确认密码' }, { validator: confirmPasswordValidator }]}
         >
           <Input.Password

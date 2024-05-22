@@ -1,4 +1,4 @@
-import { Tabs } from '@arco-design/web-react';
+import { Tabs } from 'antd';
 import React from 'react';
 import { REGISTER_TYPE, TAB_LIST } from './config';
 

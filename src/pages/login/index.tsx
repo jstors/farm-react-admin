@@ -1,8 +1,8 @@
-import { Button } from '@arco-design/web-react';
+import LogoSvg from '@/assets/login.svg';
+import RegisterSvg from '@/assets/register.svg';
+import { Button } from 'antd';
 import classnames from 'classnames';
-import React from 'react';
-import LogoSvg from '../../assets/login.svg';
-import RegisterSvg from '../../assets/register.svg';
+import React, { useState } from 'react';
 import LoginForm from './loginForm';
 import RegisterForm from './registerForm';
 import './style.less';
@@ -24,7 +24,7 @@ const TIPS_MAP = {
 };
 
 const Login = () => {
-  const [mode, setMode] = React.useState<LoginMode>(LoginMode.LOGIN);
+  const [mode, setMode] = useState<LoginMode>(LoginMode.LOGIN);
 
   /**
    * 切换登录/注册

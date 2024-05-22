@@ -1,23 +1,27 @@
 import menuConfig from '@/router/menu';
-import { Menu, Slider } from '@arco-design/web-react';
-import { IconApps, IconBug, IconBulb } from '@arco-design/web-react/icon';
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router';
+import { Menu } from 'antd';
+import React, { useEffect, useState } from 'react';
+import { useLocation, useNavigate } from 'react-router';
 
 const MenuItem = Menu.Item;
 const SubMenu = Menu.SubMenu;
 
-const CustomMenu = ({ onCollapse }) => {
+const CustomMenu = ({ collapsed }) => {
   const [menuKey, setMenuKey] = useState('/');
   const go = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    setMenuKey(location.pathname);
+  }, [location]);
 
   /**
    * 切换路由
    * @param key
    */
-  const handleMenuItemClick = (key) => {
-    setMenuKey(key);
-    go(key);
+  const handleMenuItemClick = (menu) => {
+    setMenuKey(menu?.key);
+    go(menu?.key);
   };
 
   /**
@@ -52,12 +56,11 @@ const CustomMenu = ({ onCollapse }) => {
 
   return (
     <Menu
-      autoOpen
-      style={{ height: 'calc(100% - 28px)' }}
+      mode="inline"
+      inlineCollapsed={collapsed}
+      style={{ minHeight: '100vh' }}
       selectedKeys={[menuKey]}
-      hasCollapseButton
-      onClickMenuItem={handleMenuItemClick}
-      onCollapseChange={onCollapse}
+      onClick={handleMenuItemClick}
     >
       {renderMenu(menuConfig ?? [])}
     </Menu>

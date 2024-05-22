@@ -1,10 +1,25 @@
 import path from 'node:path';
-import { vitePluginForArco } from '@arco-plugins/vite-react';
 import { defineConfig } from '@farmfe/core';
 import less from '@farmfe/js-plugin-less';
 import postcss from '@farmfe/js-plugin-postcss';
+import { theme } from 'antd';
 import Pages from 'vite-plugin-pages';
 import { adminInfo } from './global.config';
+
+const { getDesignToken } = theme;
+
+const config = {
+  token: {
+    colorPrimary: '#9d4edc',
+    colorInfo: '#9d4edc',
+  },
+  cssVar: {
+    prefix: 'farm',
+  },
+};
+
+const globalToken = getDesignToken(config);
+console.log('🤖 == globalToken:', globalToken);
 
 export default defineConfig({
   compilation: {
@@ -25,7 +40,11 @@ export default defineConfig({
         runtime: 'automatic',
       },
     ],
-    less(),
+    less({
+      lessOptions: {
+        modifyVars: globalToken,
+      },
+    }),
     postcss(),
     'farm-plugin-remove-console',
     [
@@ -41,9 +60,6 @@ export default defineConfig({
       resolver: 'react',
       moduleId: '~react-pages',
       importMode: 'async',
-    }),
-    vitePluginForArco({
-      theme: '@arco-themes/react-juzi001',
     }),
   ],
 });

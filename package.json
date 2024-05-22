@@ -16,8 +16,8 @@
     "commitlint": "commitlint --edit"
   },
   "dependencies": {
-    "@arco-design/web-react": "^2.62.1",
-    "@arco-themes/react-juzi001": "^0.0.1",
+    "@ant-design/icons": "^5.3.7",
+    "antd": "^5.17.3",
     "classnames": "^2.5.1",
     "dayjs": "^1.11.11",
     "framer-motion": "^11.2.4",
