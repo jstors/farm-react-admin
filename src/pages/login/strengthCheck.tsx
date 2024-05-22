@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Strength } from './types'
+import type { Strength } from './types';
 
 const StrengthCheckInput = ({ password }) => {
   const [strength, setStrength] = useState<Strength>('weak');
@@ -11,8 +11,8 @@ const StrengthCheckInput = ({ password }) => {
   };
 
   useEffect(() => {
-    checkPasswordStrength(password)
-  },[password])
+    checkPasswordStrength(password);
+  }, [password]);
 
   const checkPasswordStrength = (password) => {
     if (password.length === 0) return;
@@ -28,8 +28,6 @@ const StrengthCheckInput = ({ password }) => {
     if (strengthIndicator > 3) setStrength('strong');
   };
 
-
-  
   return (
     <div>
       <div

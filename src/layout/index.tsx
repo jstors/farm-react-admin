@@ -1,12 +1,12 @@
 import { INDEPENDENT_ROUTES } from '@/router/const';
-import { Layout, Spin } from '@arco-design/web-react';
-import { AnimatePresence, motion } from 'framer-motion';
-import React, { Suspense, useEffect, useState } from 'react';
+import { Layout, Spin } from 'antd';
+import React, { Suspense, useState } from 'react';
 import { useLocation, useRoutes } from 'react-router';
 import Animate from './animate';
 import CustomHeader from './header';
 import Menu from './menu';
 import './style.less';
+import CustomTheme from './theme';
 
 const Header = Layout.Header;
 const Content = Layout.Content;
@@ -39,35 +39,24 @@ const CustomLayout = ({ routers = [] }) => {
   const isIndependent = INDEPENDENT_ROUTES.includes(location.pathname);
 
   return (
-    <>
+    <CustomTheme>
       {isIndependent ? (
         <Animate>
-          <Suspense fallback={<Spin dot />}>{useRoutes(routers)}</Suspense>
+          <Suspense fallback={<Spin />}>{useRoutes(routers)}</Suspense>
         </Animate>
       ) : (
         <Layout className="h-[100vh]">
           <Layout>
-            <Sider
-              collapsible
-              collapsed={siderWidth === collapsedWidth}
-              trigger={null}
-              width={siderWidth}
-              resizeBoxProps={{
-                directions: ['right'],
-                onMoving: handleResizeSider,
-              }}
-            >
+            <Sider collapsible collapsed={siderWidth === collapsedWidth} trigger={null} width={siderWidth}>
               <Menu onCollapse={onCollapse} />
             </Sider>
             <div className="w-full box-border bg-[#f0f2f5]">
-              <Header>
+              <Header style={{ background: '#fff' }}>
                 <CustomHeader />
               </Header>
 
               <Content className=" relative m-1 p-2 rounded bg-[var(--color-bg-1)]">
-                <Suspense
-                  fallback={<Spin className="absolute inset-0 flex justify-center items-center h-[80vh]" dot />}
-                >
+                <Suspense fallback={<Spin className="absolute inset-0 flex justify-center items-center h-[80vh]" />}>
                   <Animate>{useRoutes(routers)}</Animate>
                 </Suspense>
               </Content>
@@ -75,7 +64,7 @@ const CustomLayout = ({ routers = [] }) => {
           </Layout>
         </Layout>
       )}
-    </>
+    </CustomTheme>
   );
 };
 
