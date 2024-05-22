@@ -4,22 +4,10 @@ import less from '@farmfe/js-plugin-less';
 import postcss from '@farmfe/js-plugin-postcss';
 import { theme } from 'antd';
 import Pages from 'vite-plugin-pages';
-import { adminInfo } from './global.config';
+import { adminInfo, theme as themeConfig } from './global.config';
 
 const { getDesignToken } = theme;
-
-const config = {
-  token: {
-    colorPrimary: '#9d4edc',
-    colorInfo: '#9d4edc',
-  },
-  cssVar: {
-    prefix: 'farm',
-  },
-};
-
-const globalToken = getDesignToken(config);
-console.log('🤖 == globalToken:', globalToken);
+const globalToken = getDesignToken(themeConfig);
 
 export default defineConfig({
   compilation: {

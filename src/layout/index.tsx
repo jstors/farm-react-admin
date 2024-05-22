@@ -13,9 +13,7 @@ const Content = Layout.Content;
 const Sider = Layout.Sider;
 
 const CustomLayout = ({ routers = [] }) => {
-  const collapsedWidth = 60;
-  const normalWidth = 220;
-  const [siderWidth, setSiderWidth] = useState(normalWidth);
+  const [collapsed, setCollapsed] = useState(false);
   const location = useLocation();
 
   /**
@@ -23,15 +21,7 @@ const CustomLayout = ({ routers = [] }) => {
    * @param collapsed boolean
    */
   const onCollapse = (collapsed) => {
-    setSiderWidth(collapsed ? collapsedWidth : normalWidth);
-  };
-
-  /**
-   * 拖动调整侧边栏宽度
-   * @param width number
-   */
-  const handleResizeSider = (width) => {
-    setSiderWidth(width);
+    setCollapsed(collapsed);
   };
 
   // 是否为独立页面(不需要Layout布局的页面)
@@ -47,15 +37,15 @@ const CustomLayout = ({ routers = [] }) => {
       ) : (
         <Layout className="h-[100vh]">
           <Layout>
-            <Sider collapsible collapsed={siderWidth === collapsedWidth} trigger={null} width={siderWidth}>
-              <Menu onCollapse={onCollapse} />
+            <Sider collapsible collapsed={collapsed} onCollapse={onCollapse} trigger={null}>
+              <Menu collapsed={collapsed} />
             </Sider>
             <div className="w-full box-border bg-[#f0f2f5]">
               <Header style={{ background: '#fff' }}>
                 <CustomHeader />
               </Header>
 
-              <Content className=" relative m-1 p-2 rounded bg-[var(--color-bg-1)]">
+              <Content className="content-wrap relative m-1 p-2 rounded bg-white">
                 <Suspense fallback={<Spin className="absolute inset-0 flex justify-center items-center h-[80vh]" />}>
                   <Animate>{useRoutes(routers)}</Animate>
                 </Suspense>

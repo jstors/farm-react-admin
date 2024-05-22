@@ -1,15 +1,15 @@
-// import { IconApps, IconCommon, IconDashboard, IconHome } from '@ant-design/icons';
+import { HomeOutlined, ProjectOutlined } from '@ant-design/icons';
 import React from 'react';
 
 export default [
   {
     title: '工作台',
-    // icon: <IconHome />,
+    icon: <HomeOutlined />,
     path: '/',
   },
   {
     title: '数据看板',
-    // icon: <IconDashboard />,
+    icon: <ProjectOutlined />,
     subMenu: [
       {
         title: '菜单1-1',

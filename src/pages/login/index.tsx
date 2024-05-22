@@ -1,5 +1,6 @@
 import LogoSvg from '@/assets/login.svg';
 import RegisterSvg from '@/assets/register.svg';
+import { ArrowLeftOutlined, ArrowRightOutlined } from '@ant-design/icons';
 import { Button } from 'antd';
 import classnames from 'classnames';
 import React, { useState } from 'react';
@@ -18,8 +19,8 @@ const TIPS_MAP = {
     content: '如果是新用户，请前往注册',
   },
   [LoginMode.REGISTER]: {
-    tip: '老用户了吗？',
-    content: '老用户请直接登录',
+    tip: '欢迎来到账号注册',
+    content: '如果已有账号,请前往登录',
   },
 };
 
@@ -49,19 +50,24 @@ const Login = () => {
       </div>
       <div className="panel-container">
         <div className="panel left-panel">
-          <div className="content">
-            <h3>{TIPS_MAP[mode].tip}</h3>
-            <p>{TIPS_MAP[mode].content}</p>
-            <Button onClick={handleToggle}>GO</Button>
+          <div className="content ">
+            <div className="mr-6">
+              <h3>{TIPS_MAP[mode].tip}</h3>
+              <p>{TIPS_MAP[mode].content}</p>
+            </div>
+            <Button type="link" icon={<ArrowRightOutlined />} onClick={handleToggle} />
           </div>
+
           <img src={LogoSvg} className="image" alt="" />
         </div>
 
         <div className="panel right-panel">
           <div className="content">
-            <h3>{TIPS_MAP[mode].tip}</h3>
-            <p>{TIPS_MAP[mode].content}</p>
-            <Button onClick={handleToggle}>Go</Button>
+            <Button type="link" icon={<ArrowLeftOutlined />} onClick={handleToggle} />
+            <div className="ml-6">
+              <h3>{TIPS_MAP[mode].tip}</h3>
+              <p>{TIPS_MAP[mode].content}</p>
+            </div>
           </div>
           <img src={RegisterSvg} className="image" alt="" />
         </div>
