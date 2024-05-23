@@ -27,7 +27,8 @@
   </p>
 
 > For a better development experience, please install the [**Biome plugin**](https://biomejs.dev/en/reference/vscode/) on your local development tool.
->
+
+
 ## RoadMap
 
 [RoadMap](https://github.com/jstors/farm-react-template/issues/21)
