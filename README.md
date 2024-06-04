@@ -3,7 +3,7 @@
 <!--   <h3>Farm-react Starter Template</h3> -->
   <p>
     <img src="./src/assets/logo.png" width="30" align="center" />
-    开箱即用的 `Farm-react-admin` 开发模板
+    开箱即用的 Farm-react-admin 开发模板
   </p>
   <p align="center">
     <a href="https://discord.gg/mDErq9aFnF">
