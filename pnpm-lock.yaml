@@ -56,14 +56,14 @@ devDependencies:
     specifier: ^1.0.2
     version: 1.0.2
   '@farmfe/core':
-    specifier: ^1.1.12
-    version: 1.1.12
+    specifier: ^1.1.13
+    version: 1.1.13
   '@farmfe/js-plugin-less':
     specifier: ^1.7.0
-    version: 1.7.0(@farmfe/core@1.1.12)(less@4.2.0)
+    version: 1.7.0(@farmfe/core@1.1.13)(less@4.2.0)
   '@farmfe/js-plugin-postcss':
     specifier: ^1.6.0
-    version: 1.6.0(@farmfe/core@1.1.12)(postcss@8.4.38)
+    version: 1.6.0(@farmfe/core@1.1.13)(postcss@8.4.38)
   '@farmfe/plugin-react':
     specifier: ^1.1.0
     version: 1.1.0
@@ -1222,8 +1222,8 @@ packages:
       walkdir: 0.4.1
     dev: true
 
-  /@farmfe/core-darwin-arm64@1.1.12:
-    resolution: {integrity: sha512-CJOl3nm/k1GayGwOJoa7QK1hjF2/0jhv3K6BPv6qfYT7oyHwkuEZjU30WyKNjMb8LofwGXl4ez1wIhIBZc/0yg==}
+  /@farmfe/core-darwin-arm64@1.1.13:
+    resolution: {integrity: sha512-Y2uN6E46koqYz3ElluY0zdgwDJqA01G1J2VUgaJ+000AEz1/lPVMl5aG2Hiup/kTU+6wb7npJjfilieR2XBq6g==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [darwin]
@@ -1231,8 +1231,8 @@ packages:
     dev: true
     optional: true
 
-  /@farmfe/core-darwin-x64@1.1.12:
-    resolution: {integrity: sha512-whYQFbnbJVILugtfQT96UtEZsT/xK+oFuCyGt0B7IVHtLCX+lPtgLkr/LNY7x8pp36EWRCbcngV5YvPZmfZOuw==}
+  /@farmfe/core-darwin-x64@1.1.13:
+    resolution: {integrity: sha512-Sfqrcye4Jb0zuuYKh9UqFlK0BtYanabJrn5uY7Vi9bw42l3PGqa3S84iK/7+DhjR422OtV3B7eFntKt6UFLlMg==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [darwin]
@@ -1240,8 +1240,8 @@ packages:
     dev: true
     optional: true
 
-  /@farmfe/core-linux-arm64-gnu@1.1.12:
-    resolution: {integrity: sha512-vy2TkrwZ642c3g3jJARIssk6qXEE6ebpRoXBv0QiN2/qjWcfo9oSqYTYbnNvyiTXJp9N9UsfCzlHl9jmEariKA==}
+  /@farmfe/core-linux-arm64-gnu@1.1.13:
+    resolution: {integrity: sha512-YDXRySfGZV84AqPDVjOe66T875vgzUDJts+MaJL/it0Bbos2WBGhY3Q2lkzXWHB7W4kso3toGlnoUiD1UqL7jA==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
@@ -1249,8 +1249,8 @@ packages:
     dev: true
     optional: true
 
-  /@farmfe/core-linux-arm64-musl@1.1.12:
-    resolution: {integrity: sha512-1pTiy6NsEK2OwtD743hRl1IFDm9g1fPCjPGSI0gz4xZ9YKXZHYgIMpFf3yV3DRIQMBaYVMFvK8qwQMu14JQVFw==}
+  /@farmfe/core-linux-arm64-musl@1.1.13:
+    resolution: {integrity: sha512-XmVIZPAv40PS0Jn65HryUmXH36Yfctly5Ku+GKTTGXxSmlVammleY2zvmxlF/PSX8Nfr3YXa/8wHC6oyYhioPA==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
@@ -1258,8 +1258,8 @@ packages:
     dev: true
     optional: true
 
-  /@farmfe/core-linux-x64-gnu@1.1.12:
-    resolution: {integrity: sha512-yn+UL1k0qCCAhpywttsCOgapVhhdDTCzEFmnwLsiKRKyTH1r5H/4OwcVeQ69UqiBV1DR5SgMm0ZsAl13be0GMA==}
+  /@farmfe/core-linux-x64-gnu@1.1.13:
+    resolution: {integrity: sha512-2X9488zHSvh/x0qwrIzWM4TI1sW8c7S9yE1jH0voEP10fJ03FM9DkejoVQnjpq/j79I0K4WBLzSn2e4h+w3Mpw==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
@@ -1267,8 +1267,8 @@ packages:
     dev: true
     optional: true
 
-  /@farmfe/core-linux-x64-musl@1.1.12:
-    resolution: {integrity: sha512-odsTuMbyXD2Lh25d4WCaISOYnfdPFDsvVPrqtbP5OgWJuw42OPqswlwRtSmg7f9bFnIjNM/uzI3+Mg2chG38UA==}
+  /@farmfe/core-linux-x64-musl@1.1.13:
+    resolution: {integrity: sha512-suVBfrO25T13K/IvL+NZdizGnTDp8CnaECmLOvx40JVI5lkV3H3MCusx55vP9Pa+hkRl6cAgao9xYs8TONr5xA==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
@@ -1276,8 +1276,8 @@ packages:
     dev: true
     optional: true
 
-  /@farmfe/core-win32-arm64-msvc@1.1.12:
-    resolution: {integrity: sha512-9WSjxeMTeKS9sDy+na24cvZpVG035OpEa0IvZFbTUFWVhxioevAbPnX4U4zSSVK44WiXlTxd/+VZBTIL1LJZOg==}
+  /@farmfe/core-win32-arm64-msvc@1.1.13:
+    resolution: {integrity: sha512-N9oNJPkq8RLo9+9V3ERSg/X+Rwpke+T+YBSVLR52kRY8dGtWA8oz/N5dCkQLUOH13f3i0hmRNKzgUkoco1pVYA==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [win32]
@@ -1285,8 +1285,8 @@ packages:
     dev: true
     optional: true
 
-  /@farmfe/core-win32-ia32-msvc@1.1.12:
-    resolution: {integrity: sha512-NJ1RN+OlRhgA7TqvMlahPpMwZPh0jF4orth+zxZK5FdBA6iHHIpFsNA8/BTuaZGzaG5acF9CN05eADc9PTow8Q==}
+  /@farmfe/core-win32-ia32-msvc@1.1.13:
+    resolution: {integrity: sha512-NKK1FkQHtr2by2rWBYUXYBzRfrr0X43GC7WuP7e1uRQqIHB2TVK1HS5wR20wbzrXtlPJL2UI6FfQykgnFSSmsQ==}
     engines: {node: '>= 10'}
     cpu: [ia32]
     os: [win32]
@@ -1294,8 +1294,8 @@ packages:
     dev: true
     optional: true
 
-  /@farmfe/core-win32-x64-msvc@1.1.12:
-    resolution: {integrity: sha512-1zQtf+98skJ3FoPiJ/Ms5gA8sitix3m/0PMUVDtF3dyELgLXebvxSOuC8Fvk2IkMDTlj5tn3doDHmVSGRuhl8g==}
+  /@farmfe/core-win32-x64-msvc@1.1.13:
+    resolution: {integrity: sha512-4+L2frSbEeL401SubpY4T0euEVbToyUBq85Sx1d6jch+SRF1u137yDdrWRWPJgOUho4g3qmKuEzf5FkyrWqEXQ==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
@@ -1303,8 +1303,8 @@ packages:
     dev: true
     optional: true
 
-  /@farmfe/core@1.1.12:
-    resolution: {integrity: sha512-9tR29JoKff1p4erK7V7vj52kpAFq5qy3gEOsPpYtKQwbZwB/ijgr+dslsv9Uj0kIkYlqSwFOZHDAzLcqowSaiw==}
+  /@farmfe/core@1.1.13:
+    resolution: {integrity: sha512-gKdWoLqK9YesJnLBOSzPgxq+t4/EdCE4/ecDCo4gOUn1qm2Nxy3t5kBzj5vsnoWj6BxkTT+5ztxZuddBolI7wg==}
     engines: {node: '>=16.15.1'}
     dependencies:
       '@farmfe/runtime': 0.11.1
@@ -1335,15 +1335,15 @@ packages:
       zod: 3.23.8
       zod-validation-error: 1.5.0(zod@3.23.8)
     optionalDependencies:
-      '@farmfe/core-darwin-arm64': 1.1.12
-      '@farmfe/core-darwin-x64': 1.1.12
-      '@farmfe/core-linux-arm64-gnu': 1.1.12
-      '@farmfe/core-linux-arm64-musl': 1.1.12
-      '@farmfe/core-linux-x64-gnu': 1.1.12
-      '@farmfe/core-linux-x64-musl': 1.1.12
-      '@farmfe/core-win32-arm64-msvc': 1.1.12
-      '@farmfe/core-win32-ia32-msvc': 1.1.12
-      '@farmfe/core-win32-x64-msvc': 1.1.12
+      '@farmfe/core-darwin-arm64': 1.1.13
+      '@farmfe/core-darwin-x64': 1.1.13
+      '@farmfe/core-linux-arm64-gnu': 1.1.13
+      '@farmfe/core-linux-arm64-musl': 1.1.13
+      '@farmfe/core-linux-x64-gnu': 1.1.13
+      '@farmfe/core-linux-x64-musl': 1.1.13
+      '@farmfe/core-win32-arm64-msvc': 1.1.13
+      '@farmfe/core-win32-ia32-msvc': 1.1.13
+      '@farmfe/core-win32-x64-msvc': 1.1.13
     transitivePeerDependencies:
       - bufferutil
       - debug
@@ -1351,23 +1351,23 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@farmfe/js-plugin-less@1.7.0(@farmfe/core@1.1.12)(less@4.2.0):
+  /@farmfe/js-plugin-less@1.7.0(@farmfe/core@1.1.13)(less@4.2.0):
     resolution: {integrity: sha512-fCHHLE+rlWetFYwnQdB5GQu6SuLD3TlAr09PpRZWEdkE3+YhVdfsh3roS2yDJlupJQOtdRMZfCwdo71K5K5W5A==}
     peerDependencies:
       '@farmfe/core': ^1.1.0
       less: ^3.5.0 || ^4.0.0
     dependencies:
-      '@farmfe/core': 1.1.12
+      '@farmfe/core': 1.1.13
       less: 4.2.0
     dev: true
 
-  /@farmfe/js-plugin-postcss@1.6.0(@farmfe/core@1.1.12)(postcss@8.4.38):
+  /@farmfe/js-plugin-postcss@1.6.0(@farmfe/core@1.1.13)(postcss@8.4.38):
     resolution: {integrity: sha512-WpRTs+RSL9wJfpVlK4aAi7heAIPptwvTGCrfD9U6riUYVoaawoDx8EbMdAHIRAUDzHqLdb/7+pgujBd15RwVKw==}
     peerDependencies:
       '@farmfe/core': ^1.1.0
       postcss: '>=8.0.0'
     dependencies:
-      '@farmfe/core': 1.1.12
+      '@farmfe/core': 1.1.13
       postcss: 8.4.38
     dev: true
 
