@@ -1,20 +1,35 @@
 import { TOKEN_KEY } from '@/router/const';
 import { setCookie } from '@/utils/cookie';
 import { LockOutlined, UserOutlined } from '@ant-design/icons';
+import { useMutation } from '@tanstack/react-query';
 import { Button, Form, Input, message } from 'antd';
 import React from 'react';
 import { useNavigate } from 'react-router';
+
 const FormItem = Form.Item;
 
 const initialValues = {
-  username: 'farm',
+  username: 'farmer',
   password: '123456',
 };
 
 const LoginForm = () => {
   const go = useNavigate();
+
+  const { mutate, isPending } = useMutation({
+    mutationFn: async (params) => {
+      const response = await fetch('/basic-api/login', { method: 'POST', body: JSON.stringify(params) });
+      return response.json();
+    },
+    onSuccess: () => {
+      setCookie(TOKEN_KEY, new Date().getTime(), 1);
+      message.success('登录成功');
+      go('/');
+    },
+  });
+
   /**
-   *
+   * 登录
    * @param value
    */
   const handleLogin = async (value) => {

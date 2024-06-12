@@ -6,6 +6,7 @@ import classnames from 'classnames';
 import React, { useState } from 'react';
 import LoginForm from './loginForm';
 import RegisterForm from './registerForm';
+
 import './style.less';
 
 export enum LoginMode {

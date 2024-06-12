@@ -16,6 +16,10 @@
     "commitlint": "commitlint --edit"
   },
   "dependencies": {
+    "@arco-design/web-react": "^2.61.3",
+    "@arco-themes/react-juzi001": "^0.0.1",
+    "@tanstack/react-query": "^5.32.0",
+    "mockjs": "^1.1.0",
     "@ant-design/icons": "^5.3.7",
     "@ant-design/plots": "^2.2.2",
     "antd": "^5.17.3",
@@ -37,6 +41,7 @@
     "@farmfe/core": "^1.1.13",
     "@farmfe/js-plugin-less": "^1.7.0",
     "@farmfe/js-plugin-postcss": "^1.6.0",
+    "@tanstack/react-query-devtools": "^5.32.0",
     "@farmfe/plugin-react": "^1.1.0",
     "@jstors/farm-plugin-html-template": "^0.0.3",
     "@types/react": "^18.3.2",
@@ -49,6 +54,7 @@
     "postcss": "^8.4.38",
     "react-refresh": "^0.14.2",
     "tailwindcss": "^3.4.3",
+    "vite-plugin-mock": "^3.0.2",
     "vite-plugin-pages": "^0.32.1"
   },
   "lint-staged": {

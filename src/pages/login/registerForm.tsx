@@ -75,21 +75,13 @@ const RegisterForm = () => {
           <Input placeholder={placeholder} style={{ width: '100%' }} />
         </FormItem>
         <FormItem name="password" rules={[{ required: true, message: '请输入密码' }]}>
-          <Input.Password
-            normalize={(v) => (v ? v.trim() : v)}
-            onChange={(val) => setPassword(val)}
-            placeholder="请输入密码"
-          />
+          <Input.Password placeholder="请输入密码" />
         </FormItem>
         <FormItem
           name="confirmPassword"
           rules={[{ required: true, message: '请确认密码' }, { validator: confirmPasswordValidator }]}
         >
-          <Input.Password
-            normalizeTrigger={['onBlur']}
-            normalize={(v) => (v ? v.trim() : v)}
-            placeholder="请确认密码"
-          />
+          <Input.Password placeholder="请确认密码" />
         </FormItem>
         <FormItem>
           <StrengthCheckInput password={password} />

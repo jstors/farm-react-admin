@@ -3,6 +3,7 @@ import { defineConfig } from '@farmfe/core';
 import less from '@farmfe/js-plugin-less';
 import postcss from '@farmfe/js-plugin-postcss';
 import { theme } from 'antd';
+import { viteMockServe } from 'vite-plugin-mock';
 import Pages from 'vite-plugin-pages';
 import { adminInfo, theme as themeConfig } from './global.config';
 
@@ -11,6 +12,7 @@ const globalToken = getDesignToken(themeConfig);
 
 export default defineConfig({
   compilation: {
+    minify: false,
     resolve: {
       alias: {
         '@/': path.join(process.cwd(), 'src'),
@@ -48,6 +50,10 @@ export default defineConfig({
       resolver: 'react',
       moduleId: '~react-pages',
       importMode: 'async',
+    }),
+    viteMockServe({
+      mockPath: 'mock',
+      enable: true,
     }),
   ],
 });
