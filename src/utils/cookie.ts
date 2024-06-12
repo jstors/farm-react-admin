@@ -1,4 +1,4 @@
-import { APP_NAME } from '@/config/const';
+import { APP_NAME } from '@/router/const';
 
 /**
  * set cookie

@@ -1,4 +1,4 @@
-import { LOGIN_PATH, TOKEN_KEY } from '@/config/const';
+import { LOGIN_PATH, TOKEN_KEY } from '@/router/const';
 import { getCookie } from '@/utils/cookie';
 import { useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router';
