@@ -34,7 +34,7 @@
     "@commitlint/config-conventional": "^19.2.2",
     "@emotion/is-prop-valid": "^1.2.2",
     "@farmfe/cli": "^1.0.2",
-    "@farmfe/core": "^1.2.0",
+    "@farmfe/core": "^1.2.2",
     "@farmfe/js-plugin-less": "^1.8.0",
     "@farmfe/js-plugin-postcss": "^1.7.0",
     "@farmfe/plugin-react": "^1.1.0",
