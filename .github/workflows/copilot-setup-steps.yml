@@ -1,0 +1,43 @@
+name: "Copilot Setup Steps"
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/copilot-setup-steps.yml
+  pull_request:
+    paths:
+      - .github/workflows/copilot-setup-steps.yml
+
+jobs:
+  copilot-setup-steps:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+    env:
+      # 可通过 copilot 环境变量覆盖（如企业代理）
+      HTTP_PROXY: ${{ vars.HTTP_PROXY }}
+      HTTPS_PROXY: ${{ vars.HTTPS_PROXY }}
+      NO_PROXY: ${{ vars.NO_PROXY }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'pnpm'
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile=false
+
+      - name: Verify npm domains for Codex agent networking guide
+        run: |
+          echo "Ensure outbound access for: npmjs.org, npmjs.com, registry.npmjs.com, registry.npmjs.org, skimdb.npmjs.com"

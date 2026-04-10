@@ -46,3 +46,15 @@
 - [Biome](https://biomejs.dev/en/reference/configuration/#javascriptformatterjsxquotestyle): 一个基于Rust的代码检查和格式化工具，可以增强开发体验
 - [Ant Design](https://ant.design/components/overview-cn/): 开箱即用的 React 组件库，使用版本 5.x
 - [vite-plugin-pages](https://github.com/hannoeru/vite-plugin-pages?tab=readme-ov-file#react-1): 基于约定的路由系统
+
+## 新增能力（MVP）
+- 登录/注册/刷新/退出完整会话流（基于 mock API，可替换真实后端）
+- `zustand + @tanstack/react-query` 状态与服务端数据管理
+- 基础后台页面：个人中心、角色权限、菜单权限、审计日志入口
+- 插件化能力：manifest、运行时注册器、插件路由与菜单挂载
+- 三方扩展接口：事件总线、生命周期 hooks、能力注册中心
+
+## 开发文档
+- UI/UX 与动效规范：`/home/runner/work/farm-react-admin/farm-react-admin/docs/ui-ux-animation-guidelines.md`
+- 三方接入指南：`/home/runner/work/farm-react-admin/farm-react-admin/docs/third-party-integration.md`
+- 插件模板：`/home/runner/work/farm-react-admin/farm-react-admin/templates/plugin`

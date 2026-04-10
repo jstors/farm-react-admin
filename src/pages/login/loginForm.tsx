@@ -1,9 +1,9 @@
-import { TOKEN_KEY } from '@/router/const';
-import { setCookie } from '@/utils/cookie';
+import { useLoginMutation } from '@/hooks/useAuthMutations';
 import { LockOutlined, UserOutlined } from '@ant-design/icons';
 import { Button, Form, Input, message } from 'antd';
 import React from 'react';
 import { useNavigate } from 'react-router';
+
 const FormItem = Form.Item;
 
 const initialValues = {
@@ -13,15 +13,16 @@ const initialValues = {
 
 const LoginForm = () => {
   const go = useNavigate();
-  /**
-   *
-   * @param value
-   */
+  const loginMutation = useLoginMutation();
+
   const handleLogin = async (value) => {
-    // TODO complete login logic
-    setCookie(TOKEN_KEY, new Date().getTime(), 1);
-    message.success('登录成功');
-    go('/');
+    try {
+      await loginMutation.mutateAsync(value);
+      message.success('登录成功');
+      go('/');
+    } catch (error) {
+      message.error(error instanceof Error ? error.message : '登录失败');
+    }
   };
 
   return (
@@ -34,7 +35,7 @@ const LoginForm = () => {
           <Input.Password size="large" prefix={<LockOutlined />} placeholder="请输入密码" />
         </FormItem>
         <FormItem>
-          <Button type="primary" htmlType="submit" className="login-btn">
+          <Button type="primary" htmlType="submit" className="login-btn" loading={loginMutation.isPending}>
             登录
           </Button>
         </FormItem>

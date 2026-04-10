@@ -1,6 +1,8 @@
+import useRouterGuard from '@/hooks/useRouterGuard';
 import { INDEPENDENT_ROUTES } from '@/router/const';
-import { Layout, Spin } from 'antd';
-import React, { Suspense, useState } from 'react';
+import { useUiStore } from '@/store/ui';
+import { Layout, Spin, message } from 'antd';
+import React, { Suspense } from 'react';
 import { useLocation, useRoutes } from 'react-router';
 import Animate from './animate';
 import CustomHeader from './header';
@@ -13,19 +15,18 @@ const Content = Layout.Content;
 const Sider = Layout.Sider;
 
 const CustomLayout = ({ routers = [] }) => {
-  const [collapsed, setCollapsed] = useState(false);
+  const collapsed = useUiStore((state) => state.collapsed);
+  const setCollapsed = useUiStore((state) => state.setCollapsed);
   const location = useLocation();
 
-  /**
-   * 是否折叠侧边栏
-   * @param collapsed boolean
-   */
-  const onCollapse = (collapsed) => {
-    setCollapsed(collapsed);
+  useRouterGuard(() => {
+    message.error('用户未登录或会话已过期,请重新登录');
+  });
+
+  const onCollapse = (nextCollapsed) => {
+    setCollapsed(nextCollapsed);
   };
 
-  // 是否为独立页面(不需要Layout布局的页面)
-  // 例如: login页面
   const isIndependent = INDEPENDENT_ROUTES.includes(location.pathname);
 
   return (
