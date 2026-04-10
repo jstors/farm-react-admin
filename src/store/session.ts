@@ -76,12 +76,12 @@ export const useSessionStore = create<SessionState>((set, get) => ({
   refresh: async () => {
     const current = get().tokens;
     if (!current?.refreshToken) {
-      throw new Error('没有可用的刷新令牌');
+      throw new Error('没有可用的刷新令牌，用户可能需要重新登录');
     }
     const tokens = await authApi.refresh(current.refreshToken);
     const user = get().user;
     if (!user) {
-      throw new Error('用户会话不存在');
+      throw new Error('用户会话不存在，认证状态可能已被清理');
     }
     get().setSession(user, tokens);
   },

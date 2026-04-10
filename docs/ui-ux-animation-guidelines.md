@@ -3,7 +3,7 @@
 ## 设计 Token
 - 主色：`#9d4edc`
 - 信息色：`#9d4edc`
-- 主题来源：`/home/runner/work/farm-react-admin/farm-react-admin/global.config.ts`
+- 主题来源：`./global.config.ts`
 
 ## 页面结构模板
 - 顶部：全局操作（头像、退出、主题）

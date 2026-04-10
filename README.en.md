@@ -55,6 +55,6 @@ All configuration files are located in the `config` directory and can be modifie
 - Third-party extension APIs: event bus, lifecycle hooks, capability registry
 
 ## Docs
-- UI/UX and animation guidelines: `/home/runner/work/farm-react-admin/farm-react-admin/docs/ui-ux-animation-guidelines.md`
-- Third-party integration guide: `/home/runner/work/farm-react-admin/farm-react-admin/docs/third-party-integration.md`
-- Plugin scaffold template: `/home/runner/work/farm-react-admin/farm-react-admin/templates/plugin`
+- UI/UX and animation guidelines: `./docs/ui-ux-animation-guidelines.md`
+- Third-party integration guide: `./docs/third-party-integration.md`
+- Plugin scaffold template: `./templates/plugin`

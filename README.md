@@ -55,6 +55,6 @@
 - 三方扩展接口：事件总线、生命周期 hooks、能力注册中心
 
 ## 开发文档
-- UI/UX 与动效规范：`/home/runner/work/farm-react-admin/farm-react-admin/docs/ui-ux-animation-guidelines.md`
-- 三方接入指南：`/home/runner/work/farm-react-admin/farm-react-admin/docs/third-party-integration.md`
-- 插件模板：`/home/runner/work/farm-react-admin/farm-react-admin/templates/plugin`
+- UI/UX 与动效规范：`./docs/ui-ux-animation-guidelines.md`
+- 三方接入指南：`./docs/third-party-integration.md`
+- 插件模板：`./templates/plugin`

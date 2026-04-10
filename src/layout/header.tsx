@@ -1,7 +1,7 @@
 import DefaultAvatar from '@/assets/logo.png';
 import { LOGIN_PATH } from '@/router/const';
 import { useSessionStore } from '@/store/session';
-import { Avatar, Dropdown, type MenuProps, Space } from 'antd';
+import { Avatar, Dropdown, type MenuProps, Space, message } from 'antd';
 import React from 'react';
 import { useNavigate } from 'react-router';
 
@@ -11,8 +11,12 @@ const CustomHeader = () => {
   const user = useSessionStore((state) => state.user);
 
   const handleLogout = async () => {
-    await logout();
-    go(LOGIN_PATH);
+    try {
+      await logout();
+      go(LOGIN_PATH);
+    } catch (error) {
+      message.error(error instanceof Error ? error.message : '退出失败，请稍后重试');
+    }
   };
 
   const items: MenuProps['items'] = [

@@ -2,6 +2,8 @@ export interface HttpRequestConfig extends RequestInit {
   retries?: number;
 }
 
+const RETRY_BASE_DELAY_MS = 200;
+
 export class HttpError extends Error {
   status: number;
 
@@ -25,9 +27,9 @@ export async function httpClient<T>(url: string, config: HttpRequestConfig = {})
       return (await response.json()) as T;
     } catch (error) {
       if (attempt >= retries) throw error;
-      await wait((attempt + 1) * 200);
+      await wait((attempt + 1) * RETRY_BASE_DELAY_MS);
     }
   }
 
-  throw new Error('Unexpected request state');
+  throw new Error('Request retries exhausted');
 }
