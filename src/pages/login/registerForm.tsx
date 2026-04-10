@@ -1,5 +1,4 @@
-import { TOKEN_KEY } from '@/router/const';
-import { setCookie } from '@/utils/cookie';
+import { useRegisterMutation } from '@/hooks/useAuthMutations';
 import { validateEmail, validatePhone } from '@/utils/validate';
 import { Button, Form, Input, message } from 'antd';
 import React, { useState } from 'react';
@@ -13,24 +12,21 @@ const FormItem = Form.Item;
 const RegisterForm = () => {
   const [form] = Form.useForm();
   const go = useNavigate();
-  // 默认请输入邮箱
+  const registerMutation = useRegisterMutation();
   const [placeholder, setPlaceholder] = useState(PLACEHOLDER[REGISTER_TYPE.EMAIL]);
-  // 默认邮箱注册
   const [tabVal, setTabVal] = useState(REGISTER_TYPE.EMAIL);
   const [password, setPassword] = useState('');
-  /**
-   *
-   * @param value
-   */
+
   const handleRegister = async (value) => {
-    console.log('注册表单参数', value);
-    // TODO complete register logic
-    setCookie(TOKEN_KEY, new Date().getTime(), 1);
-    message.success('注册成功');
-    go('/');
+    try {
+      await registerMutation.mutateAsync({ username: value.username, password: value.password });
+      message.success('注册成功');
+      go('/');
+    } catch (error) {
+      message.error(error instanceof Error ? error.message : '注册失败');
+    }
   };
 
-  // 账号校验
   const accountValidator = (value, callback) => {
     if (REGISTER_TYPE.EMAIL === tabVal) {
       if (!validateEmail(value)) return callback('邮箱格式有误');
@@ -40,14 +36,12 @@ const RegisterForm = () => {
       if (!validatePhone(value)) return callback('手机号格式有误');
       return callback();
     }
-    // 默认用户名三位字符
     if (REGISTER_TYPE.USER_NAME === tabVal) {
       if (value.length < 3) return callback('用户名最少三位字符');
       return callback();
     }
   };
 
-  // 确认密码校验
   const confirmPasswordValidator = (value, callback) => {
     if (!value || form.getFieldValue('password') !== value) {
       return callback('两次输入的密码不一致');
@@ -55,18 +49,14 @@ const RegisterForm = () => {
     return callback();
   };
 
-  // 切换tab选择注册方式
   const handleTabChange = (val) => {
-    // 设置注册方式值
     setTabVal(val);
-    // 重置表单
     form.resetFields();
-    // 更新placeholder
     setPlaceholder(PLACEHOLDER[val]);
   };
+
   return (
     <div className="form register-form">
-      {/* Form wrapperCol 默认19 */}
       <Form form={form} onFinish={handleRegister} className="w-1/2">
         <FormItem>
           <RegisterTabs onTabChange={handleTabChange} />
@@ -77,7 +67,7 @@ const RegisterForm = () => {
         <FormItem name="password" rules={[{ required: true, message: '请输入密码' }]}>
           <Input.Password
             normalize={(v) => (v ? v.trim() : v)}
-            onChange={(val) => setPassword(val)}
+            onChange={(event) => setPassword(event.target.value)}
             placeholder="请输入密码"
           />
         </FormItem>
@@ -95,7 +85,7 @@ const RegisterForm = () => {
           <StrengthCheckInput password={password} />
         </FormItem>
         <FormItem>
-          <Button type="primary" htmlType="submit" className="register-btn">
+          <Button type="primary" htmlType="submit" className="register-btn" loading={registerMutation.isPending}>
             注册
           </Button>
         </FormItem>
