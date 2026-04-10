@@ -11,6 +11,13 @@
 3. 通过 lifecycle 在应用关键节点注入逻辑。
 
 ## 安全建议
-- 三方调用建议附带签名（timestamp + nonce + signature）。
+- 三方调用建议附带签名（timestamp + nonce + signature），推荐 `HMAC-SHA256(secret, method + path + body + timestamp + nonce)`。
 - 对外接口需限流并记录审计日志。
 - 默认白名单机制控制来源。
+
+
+### 签名示例（伪代码）
+```text
+base = method + path + body + timestamp + nonce
+signature = HMAC_SHA256(secret, base)
+```

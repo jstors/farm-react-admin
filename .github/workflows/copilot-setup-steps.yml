@@ -36,7 +36,7 @@ jobs:
           version: 10
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile=false
+        run: pnpm install --frozen-lockfile
 
       - name: Verify npm domains for Codex agent networking guide
         run: |

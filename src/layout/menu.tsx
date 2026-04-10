@@ -58,12 +58,18 @@ const CustomMenu = ({ collapsed }) => {
     go(menu?.key);
   };
 
-  const renderMenu = (config: AppMenuItem[]) => {
-    return config.map((item) => {
+  const buildNodeKey = (item: AppMenuItem, parentKey: string, index: number) => {
+    if (item.path) return item.path;
+    return `${parentKey}-${index}`;
+  };
+
+  const renderMenu = (config: AppMenuItem[], parentKey = 'root') => {
+    return config.map((item, index) => {
+      const nodeKey = buildNodeKey(item, parentKey, index);
       if (item?.subMenu) {
         return (
           <SubMenu
-            key={item.path || item.title}
+            key={nodeKey}
             title={
               <>
                 <span className="mr-2">{item?.icon}</span>
@@ -71,12 +77,12 @@ const CustomMenu = ({ collapsed }) => {
               </>
             }
           >
-            {renderMenu(item?.subMenu)}
+            {renderMenu(item?.subMenu, nodeKey)}
           </SubMenu>
         );
       }
       return (
-        <MenuItem key={item.path}>
+        <MenuItem key={nodeKey}>
           <span className="mr-2">{item?.icon}</span>
           {item.title}
         </MenuItem>

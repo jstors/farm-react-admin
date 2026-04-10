@@ -22,9 +22,13 @@ function App() {
   const [pluginRoutes, setPluginRoutes] = useState<RouteObject[]>([]);
 
   useEffect(() => {
+    let cancelled = false;
+
     bootstrap();
     void (async () => {
       await pluginRegistry.registerBatch(builtInPlugins);
+      if (cancelled) return;
+
       const mounted = pluginRegistry
         .getRoutes()
         .map((route) => ({
@@ -32,9 +36,15 @@ function App() {
           element: <ProtectedRoute permission={route.permission}>{route.element as React.ReactNode}</ProtectedRoute>,
         }))
         .filter((route) => !!route.path);
+
+      if (cancelled) return;
       setPluginRoutes(mounted);
       await runLifecycleHook('app:ready');
     })();
+
+    return () => {
+      cancelled = true;
+    };
   }, [bootstrap]);
 
   const appRoutes = useMemo(() => [...routes, ...pluginRoutes], [pluginRoutes]);

@@ -3,6 +3,8 @@ import { useSessionStore } from '@/store/session';
 import { useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router';
 
+const REFRESH_BUFFER_MS = 30 * 1000;
+
 export default function useRouterGuard(callback?: () => void) {
   const location = useLocation();
   const go = useNavigate();
@@ -22,7 +24,7 @@ export default function useRouterGuard(callback?: () => void) {
         return;
       }
 
-      if (tokens.expiresAt <= Date.now()) {
+      if (tokens.expiresAt - Date.now() <= REFRESH_BUFFER_MS) {
         try {
           await refresh();
         } catch {
