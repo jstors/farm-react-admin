@@ -61,16 +61,16 @@ importers:
         specifier: ^1.2.2
         version: 1.4.0
       '@farmfe/cli':
-        specifier: ^1.0.4
+        specifier: ^1.0.5
         version: 1.0.5
       '@farmfe/core':
-        specifier: ^1.6.4
+        specifier: ^1.7.11
         version: 1.7.11(@types/node@25.6.0)
       '@farmfe/js-plugin-less':
-        specifier: ^1.12.0
+        specifier: ^1.13.0
         version: 1.13.0(@farmfe/core@1.7.11(@types/node@25.6.0))(less@4.6.4)
       '@farmfe/js-plugin-postcss':
-        specifier: ^1.11.0
+        specifier: ^1.12.0
         version: 1.12.0(@farmfe/core@1.7.11(@types/node@25.6.0))(postcss@8.5.9)
       '@farmfe/plugin-react':
         specifier: ^1.2.6
